@@ -183,7 +183,7 @@ paths:
         name: all-for-authid
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       - description: "If set, returns only ACL for the exact path."
@@ -192,7 +192,7 @@ paths:
         name: exact
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       - description: Access control path.
@@ -926,7 +926,7 @@ paths:
         name: include_tokens
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       responses:
@@ -2295,7 +2295,7 @@ paths:
         name: force
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       - $ref: "#/components/parameters/PdmName"
@@ -3656,7 +3656,7 @@ paths:
         name: restart
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       responses:
@@ -4847,7 +4847,7 @@ paths:
         name: errors
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       - description: Only list this amount of tasks. (0 means no limit)
@@ -4867,7 +4867,7 @@ paths:
         name: running
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       - description: Only list tasks since this UNIX epoch.
@@ -5036,7 +5036,7 @@ paths:
         name: download
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       - description: The amount of lines to read from the tasklog. Setting this parameter
@@ -6400,7 +6400,7 @@ paths:
         name: download
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       - description: The amount of lines to read from the tasklog. Setting this parameter
@@ -6473,7 +6473,7 @@ paths:
         name: wait
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       responses:
@@ -10127,7 +10127,7 @@ paths:
         name: download
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       - description: The amount of lines to read from the tasklog. Setting this parameter
@@ -10200,7 +10200,7 @@ paths:
         name: wait
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       responses:
@@ -10786,7 +10786,7 @@ paths:
         name: errors
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       - description: Only list this amount of tasks. (0 means no limit)
@@ -10816,7 +10816,7 @@ paths:
         name: running
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       - description: Only list tasks since this UNIX epoch.
@@ -10926,7 +10926,7 @@ paths:
         name: errors
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       - description: Only list this amount of tasks. (0 means no limit)
@@ -10956,7 +10956,7 @@ paths:
         name: running
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       - description: Only list tasks since this UNIX epoch.
@@ -11329,7 +11329,7 @@ paths:
         name: verbose
         required: false
         schema:
-          default: 0
+          default: false
           type: boolean
         style: form
       - description: View name.
@@ -12183,12 +12183,12 @@ components:
         data:
         - path: path
           roleid: roleid
-          propagate: 1
+          propagate: true
           ugid: ugid
           ugid_type: ""
         - path: path
           roleid: roleid
-          propagate: 1
+          propagate: true
           ugid: ugid
           ugid_type: ""
         changes: "{}"
@@ -12213,8 +12213,8 @@ components:
         role: role
         auth-id: auth-id
         digest: digest
-        propagate: 1
-        delete: 0
+        propagate: true
+        delete: false
         group: group
       properties:
         auth-id:
@@ -12226,7 +12226,7 @@ components:
             -]*))$/"
           type: string
         delete:
-          default: 0
+          default: false
           description: Remove permissions (instead of adding it).
           type: boolean
         digest:
@@ -12247,7 +12247,7 @@ components:
           pattern: "/^(?:/|(?:/(?:[A-Za-z0-9_][A-Za-z0-9._\\-]*))+)$/"
           type: string
         propagate:
-          default: 1
+          default: true
           description: Allow to propagate (inherit) permissions.
           type: boolean
         role:
@@ -12342,10 +12342,10 @@ components:
       example:
         enable-new: true
         remove-vanished: ""
-        dry-run: 0
+        dry-run: false
       properties:
         dry-run:
-          default: 0
+          default: false
           description: "If set, do not create/delete anything"
           type: boolean
         enable-new:
@@ -12860,37 +12860,37 @@ components:
         total: 5
         data:
         - firstname: firstname
-          enable: 1
+          enable: true
           expire: 0
           comment: comment
           tokens:
           - tokenid: tokenid
-            enable: 1
+            enable: true
             expire: 0
             comment: comment
           - tokenid: tokenid
-            enable: 1
+            enable: true
             expire: 0
             comment: comment
-          totp-locked: 0
+          totp-locked: false
           userid: userid
           email: email
           tfa-locked-until: 6
           lastname: lastname
         - firstname: firstname
-          enable: 1
+          enable: true
           expire: 0
           comment: comment
           tokens:
           - tokenid: tokenid
-            enable: 1
+            enable: true
             expire: 0
             comment: comment
           - tokenid: tokenid
-            enable: 1
+            enable: true
             expire: 0
             comment: comment
-          totp-locked: 0
+          totp-locked: false
           userid: userid
           email: email
           tfa-locked-until: 6
@@ -12915,7 +12915,7 @@ components:
       example:
         firstname: firstname
         password: password
-        enable: 1
+        enable: true
         expire: 0
         comment: comment
         userid: userid
@@ -12934,7 +12934,7 @@ components:
           pattern: "/^[[:^cntrl:]]*$/"
           type: string
         enable:
-          default: 1
+          default: true
           description: Enable the account (default). You can set this to '0' to disable
             the account.
           type: boolean
@@ -13008,7 +13008,7 @@ components:
         total: 6
         data:
           firstname: firstname
-          enable: 1
+          enable: true
           expire: 0
           comment: comment
           userid: userid
@@ -13041,7 +13041,7 @@ components:
       example:
         firstname: firstname
         password: password
-        enable: 1
+        enable: true
         expire: 0
         digest: digest
         comment: comment
@@ -13073,7 +13073,7 @@ components:
           pattern: "/^[[:^cntrl:]]*$/"
           type: string
         enable:
-          default: 1
+          default: true
           description: Enable the account (default). You can set this to '0' to disable
             the account.
           type: boolean
@@ -13123,12 +13123,12 @@ components:
         total: 6
         data:
         - tokenid: tokenid
-          enable: 1
+          enable: true
           token-name: token-name
           expire: 0
           comment: comment
         - tokenid: tokenid
-          enable: 1
+          enable: true
           token-name: token-name
           expire: 0
           comment: comment
@@ -13168,7 +13168,7 @@ components:
         total: 0
         data:
           tokenid: tokenid
-          enable: 1
+          enable: true
           expire: 0
           comment: comment
         changes: "{}"
@@ -13187,7 +13187,7 @@ components:
     AccessUsersCreateTokenRequest:
       additionalProperties: false
       example:
-        enable: 1
+        enable: true
         expire: 0
         digest: digest
         comment: comment
@@ -13203,7 +13203,7 @@ components:
           pattern: "/^[a-f0-9]{64}$/"
           type: string
         enable:
-          default: 1
+          default: true
           description: Enable the account (default). You can set this to '0' to disable
             the account.
           type: boolean
@@ -13240,8 +13240,8 @@ components:
     AccessUsersUpdateTokenRequest:
       additionalProperties: false
       example:
-        regenerate: 0
-        enable: 1
+        regenerate: false
+        enable: true
         expire: 0
         digest: digest
         comment: comment
@@ -13265,7 +13265,7 @@ components:
           pattern: "/^[a-f0-9]{64}$/"
           type: string
         enable:
-          default: 1
+          default: true
           description: Enable the account (default). You can set this to '0' to disable
             the account.
           type: boolean
@@ -13277,7 +13277,7 @@ components:
           minimum: 0
           type: integer
         regenerate:
-          default: 0
+          default: false
           description: Regenerate token secret while keeping permissions.
           type: boolean
     AccessUsersUpdateTokenResponse:
@@ -13396,12 +13396,12 @@ components:
           filter: filter
           mode: ""
           bind-dn: bind-dn
-          default: 0
+          default: false
           user-classes: ""
           port: 5248
           capath: capath
           sync-defaults-options: ""
-          verify: 0
+          verify: false
           comment: comment
           realm: realm
         - server2: server2
@@ -13411,12 +13411,12 @@ components:
           filter: filter
           mode: ""
           bind-dn: bind-dn
-          default: 0
+          default: false
           user-classes: ""
           port: 5248
           capath: capath
           sync-defaults-options: ""
-          verify: 0
+          verify: false
           comment: comment
           realm: realm
         changes: "{}"
@@ -13444,13 +13444,13 @@ components:
         filter: filter
         mode: ""
         bind-dn: bind-dn
-        default: 0
+        default: false
         password: password
         user-classes: ""
         port: 5248
         capath: capath
         sync-defaults-options: ""
-        verify: 0
+        verify: false
         comment: comment
         realm: realm
       properties:
@@ -13477,7 +13477,7 @@ components:
           pattern: "/^[[:^cntrl:]]*$/"
           type: string
         default:
-          default: 0
+          default: false
           description: True if you want this to be the default realm selected on login.
           type: boolean
         filter:
@@ -13526,7 +13526,7 @@ components:
             \ then user synchronization will consider all LDAP entities where ``objectClass:\
             \ person`` `or` ``objectClass: user``."
         verify:
-          default: 0
+          default: false
           description: Verify server certificate
           type: boolean
       required:
@@ -13581,12 +13581,12 @@ components:
           filter: filter
           mode: ""
           bind-dn: bind-dn
-          default: 0
+          default: false
           user-classes: ""
           port: 5248
           capath: capath
           sync-defaults-options: ""
-          verify: 0
+          verify: false
           comment: comment
           realm: realm
         changes: "{}"
@@ -13630,14 +13630,14 @@ components:
         filter: filter
         mode: ""
         bind-dn: bind-dn
-        default: 0
+        default: false
         password: password
         user-classes: ""
         port: 5248
         capath: capath
         digest: digest
         sync-defaults-options: ""
-        verify: 0
+        verify: false
         comment: comment
       properties:
         base-dn:
@@ -13663,7 +13663,7 @@ components:
           pattern: "/^[[:^cntrl:]]*$/"
           type: string
         default:
-          default: 0
+          default: false
           description: True if you want this to be the default realm selected on login.
           type: boolean
         delete:
@@ -13716,7 +13716,7 @@ components:
             \ then user synchronization will consider all LDAP entities where ``objectClass:\
             \ person`` `or` ``objectClass: user``."
         verify:
-          default: 0
+          default: false
           description: Verify server certificate
           type: boolean
       x-pdm-polymorphic:
@@ -13753,12 +13753,12 @@ components:
           filter: filter
           mode: ""
           bind-dn: bind-dn
-          default: 0
+          default: false
           user-classes: ""
           port: 5248
           capath: capath
           sync-defaults-options: ""
-          verify: 0
+          verify: false
           comment: comment
           realm: realm
         - user-attr: user-attr
@@ -13769,12 +13769,12 @@ components:
           filter: filter
           mode: ""
           bind-dn: bind-dn
-          default: 0
+          default: false
           user-classes: ""
           port: 5248
           capath: capath
           sync-defaults-options: ""
-          verify: 0
+          verify: false
           comment: comment
           realm: realm
         changes: "{}"
@@ -13803,13 +13803,13 @@ components:
         filter: filter
         mode: ""
         bind-dn: bind-dn
-        default: 0
+        default: false
         password: password
         user-classes: ""
         port: 5248
         capath: capath
         sync-defaults-options: ""
-        verify: 0
+        verify: false
         comment: comment
         realm: realm
       properties:
@@ -13836,7 +13836,7 @@ components:
           pattern: "/^[[:^cntrl:]]*$/"
           type: string
         default:
-          default: 0
+          default: false
           description: True if you want this to be the default realm selected on login.
           type: boolean
         filter:
@@ -13889,7 +13889,7 @@ components:
             \ then user synchronization will consider all LDAP entities where ``objectClass:\
             \ person`` `or` ``objectClass: user``."
         verify:
-          default: 0
+          default: false
           description: Verify server certificate
           type: boolean
       required:
@@ -13947,12 +13947,12 @@ components:
           filter: filter
           mode: ""
           bind-dn: bind-dn
-          default: 0
+          default: false
           user-classes: ""
           port: 5248
           capath: capath
           sync-defaults-options: ""
-          verify: 0
+          verify: false
           comment: comment
           realm: realm
         changes: "{}"
@@ -13982,14 +13982,14 @@ components:
         filter: filter
         mode: ""
         bind-dn: bind-dn
-        default: 0
+        default: false
         password: password
         user-classes: ""
         port: 5248
         capath: capath
         digest: digest
         sync-defaults-options: ""
-        verify: 0
+        verify: false
         comment: comment
       properties:
         base-dn:
@@ -14015,7 +14015,7 @@ components:
           pattern: "/^[[:^cntrl:]]*$/"
           type: string
         default:
-          default: 0
+          default: false
           description: True if you want this to be the default realm selected on login.
           type: boolean
         delete:
@@ -14072,7 +14072,7 @@ components:
             \ then user synchronization will consider all LDAP entities where ``objectClass:\
             \ person`` `or` ``objectClass: user``."
         verify:
-          default: 0
+          default: false
           description: Verify server certificate
           type: boolean
       x-pdm-polymorphic:
@@ -14143,7 +14143,7 @@ components:
         data:
         - acr-values: ""
           default: true
-          autocreate: 0
+          autocreate: false
           issuer-url: issuer-url
           client-key: client-key
           comment: comment
@@ -14154,7 +14154,7 @@ components:
           username-claim: username-claim
         - acr-values: ""
           default: true
-          autocreate: 0
+          autocreate: false
           issuer-url: issuer-url
           client-key: client-key
           comment: comment
@@ -14183,7 +14183,7 @@ components:
       example:
         acr-values: ""
         default: true
-        autocreate: 0
+        autocreate: false
         issuer-url: issuer-url
         client-key: client-key
         comment: comment
@@ -14198,7 +14198,7 @@ components:
           - $ref: "#/components/schemas/PdmAcrValuesField"
           description: OpenID ACR List
         autocreate:
-          default: 0
+          default: false
           description: Automatically create users if they do not exist.
           type: boolean
         client-id:
@@ -14283,7 +14283,7 @@ components:
         data:
           acr-values: ""
           default: true
-          autocreate: 0
+          autocreate: false
           issuer-url: issuer-url
           client-key: client-key
           comment: comment
@@ -14320,7 +14320,7 @@ components:
       example:
         acr-values: ""
         default: true
-        autocreate: 0
+        autocreate: false
         digest: digest
         issuer-url: issuer-url
         client-key: client-key
@@ -14337,7 +14337,7 @@ components:
           - $ref: "#/components/schemas/PdmAcrValuesField"
           description: OpenID ACR List
         autocreate:
-          default: 0
+          default: false
           description: Automatically create users if they do not exist.
           type: boolean
         client-id:
@@ -14760,7 +14760,7 @@ components:
       example:
         validation-delay: 13838
         data: data
-        disable: 0
+        disable: false
         api: api
         id: id
         type: type
@@ -14772,7 +14772,7 @@ components:
           description: DNS plugin data (base64 encoded with padding).
           type: string
         disable:
-          default: 0
+          default: false
           description: Flag to disable the config.
           type: boolean
         id:
@@ -14863,7 +14863,7 @@ components:
       example:
         validation-delay: 13838
         data: data
-        disable: 0
+        disable: false
         digest: digest
         api: api
         delete:
@@ -14887,7 +14887,7 @@ components:
           pattern: "/^[a-f0-9]{64}$/"
           type: string
         disable:
-          default: 0
+          default: false
           description: Flag to disable the config.
           type: boolean
         validation-delay:
@@ -15656,17 +15656,17 @@ components:
     NodesAptCreateUpdateRequest:
       additionalProperties: false
       example:
-        quiet: 0
-        notify: 0
+        quiet: false
+        notify: false
       properties:
         notify:
-          default: 0
+          default: false
           description: |-
             Send notification mail about new package updates available to the email
             address configured for 'root@pam').
           type: boolean
         quiet:
-          default: 0
+          default: false
           description: "Only produces output suitable for logging, omitting progress\
             \ indicators."
           type: boolean
@@ -15764,10 +15764,10 @@ components:
     NodesCertificatesCreateCertificateRequest:
       additionalProperties: false
       example:
-        force: 0
+        force: false
       properties:
         force:
-          default: 0
+          default: false
           description: Force replacement of existing files.
           type: boolean
     NodesCertificatesCreateCertificateResponse:
@@ -15830,22 +15830,22 @@ components:
       additionalProperties: false
       example:
         certificates: certificates
-        restart: 0
-        force: 0
+        restart: false
+        force: false
         key: key
       properties:
         certificates:
           description: PEM encoded certificate (chain).
           type: string
         force:
-          default: 0
+          default: false
           description: Force replacement of existing files.
           type: boolean
         key:
           description: PEM encoded private key.
           type: string
         restart:
-          default: 0
+          default: false
           description: "UI compatibility parameter, ignored"
           type: boolean
       required:
@@ -18369,27 +18369,27 @@ components:
         total: 5
         data:
         - nodes: 6
-          quorate: 0
+          quorate: false
           level: level
           ip: ip
           name: name
-          online: 0
+          online: false
           id: id
           type: ""
           nodeid: 0
           version: 1
-          local: 0
+          local: false
         - nodes: 6
-          quorate: 0
+          quorate: false
           level: level
           ip: ip
           name: name
-          online: 0
+          online: false
           id: id
           type: ""
           nodeid: 0
           version: 1
-          local: 0
+          local: false
         changes: "{}"
       properties:
         data:
@@ -18459,7 +18459,7 @@ components:
         data:
           policy_forward: ""
           policy_out: ""
-          ebtables: 1
+          ebtables: true
           enable: 0
           log_ratelimit: ""
           policy_in: ""
@@ -18481,7 +18481,7 @@ components:
       example:
         policy_forward: ""
         policy_out: ""
-        ebtables: 1
+        ebtables: true
         enable: 0
         digest: digest
         delete:
@@ -18503,7 +18503,7 @@ components:
           maxLength: 64
           type: string
         ebtables:
-          default: 1
+          default: true
           description: Enable ebtables rules cluster wide.
           type: boolean
         enable:
@@ -18673,7 +18673,7 @@ components:
       example:
         total: 4
         data:
-        - template: 0
+        - template: false
           cpus: 6.027456183070403
           vmid: 117307513
           cpu: 0.8008281904610115
@@ -18696,7 +18696,7 @@ components:
           maxmem: 7
           netin: 2
           status: ""
-        - template: 0
+        - template: false
           cpus: 6.027456183070403
           vmid: 117307513
           cpu: 0.8008281904610115
@@ -18871,7 +18871,7 @@ components:
           arch: ""
           ostype: ""
           env: env
-          unprivileged: 0
+          unprivileged: false
           unused210: ""
           unused214: ""
           unused213: ""
@@ -18898,7 +18898,7 @@ components:
           unused235: ""
           unused234: ""
           unused233: ""
-          protection: 0
+          protection: false
           unused229: ""
           unused228: ""
           unused227: ""
@@ -19035,7 +19035,7 @@ components:
           net16: ""
           memory: 16
           description: description
-          onboot: 0
+          onboot: false
           mp204: ""
           mp203: ""
           mp202: ""
@@ -19087,7 +19087,7 @@ components:
           mp231: ""
           mp230: ""
           timezone: timezone
-          debug: 0
+          debug: false
           mp251: ""
           mp250: ""
           mp255: ""
@@ -19314,7 +19314,7 @@ components:
           dev49: ""
           lock: ""
           cmode: ""
-          template: 0
+          template: false
           unused111: ""
           unused110: ""
           dev10: ""
@@ -19443,7 +19443,7 @@ components:
           unused149: ""
           unused48: ""
           unused144: ""
-          console: 1
+          console: true
           unused143: ""
           unused142: ""
           unused141: ""
@@ -19731,15 +19731,15 @@ components:
       example:
         total: 0
         data:
-          ipfilter: 0
-          macfilter: 1
+          ipfilter: false
+          macfilter: true
           policy_out: ""
-          radv: 0
+          radv: false
           log_level_in: ""
-          enable: 0
+          enable: false
           log_level_out: ""
-          ndp: 1
-          dhcp: 0
+          ndp: true
+          dhcp: false
           policy_in: ""
         changes: "{}"
       properties:
@@ -19757,8 +19757,8 @@ components:
     PveRemotesUpdatePveRemotesByRemoteLxcByVmidFirewallOptionsRequest:
       additionalProperties: false
       example:
-        ipfilter: 0
-        macfilter: 1
+        ipfilter: false
+        macfilter: true
         policy_out: ""
         log_level_in: ""
         log_level_out: ""
@@ -19766,11 +19766,11 @@ components:
         - delete
         - delete
         node: node
-        radv: 0
-        enable: 0
+        radv: false
+        enable: false
         digest: digest
-        ndp: 1
-        dhcp: 0
+        ndp: true
+        dhcp: false
         policy_in: ""
       properties:
         delete:
@@ -19780,7 +19780,7 @@ components:
             x-pdm-pattern-original: "/^(?i:[a-z][a-z0-9_-]+)$/"
           type: array
         dhcp:
-          default: 0
+          default: false
           description: Enable DHCP.
           type: boolean
         digest:
@@ -19790,11 +19790,11 @@ components:
           maxLength: 64
           type: string
         enable:
-          default: 0
+          default: false
           description: Enable/disable firewall rules.
           type: boolean
         ipfilter:
-          default: 0
+          default: false
           description: |-
             Enable default IP filters. This is equivalent to adding an empty
             ipfilter-net<id> ipset for every interface. Such ipsets implicitly
@@ -19813,11 +19813,11 @@ components:
           default: nolog
           description: Firewall log levels.
         macfilter:
-          default: 1
+          default: true
           description: Enable/disable MAC address filter.
           type: boolean
         ndp:
-          default: 1
+          default: true
           description: Enable NDP (Neighbor Discovery Protocol).
           type: boolean
         node:
@@ -19833,7 +19833,7 @@ components:
           - $ref: "#/components/schemas/PdmPolicyInEnum"
           description: Firewall IO policies.
         radv:
-          default: 0
+          default: false
           description: Allow sending Router Advertisement.
           type: boolean
     PveRemotesUpdatePveRemotesByRemoteLxcByVmidFirewallOptionsResponse:
@@ -19987,12 +19987,12 @@ components:
         - target-bridge
         node: node
         restart: true
-        online: 0
+        online: false
         target-endpoint: target-endpoint
         target-storage:
         - target-storage
         - target-storage
-        delete: 0
+        delete: false
         target-vmid: 1
         timeout: 1
         target: target
@@ -20003,7 +20003,7 @@ components:
           minimum: 0
           type: integer
         delete:
-          default: 0
+          default: false
           description: Delete the original VM and related data after successful migration.
           type: boolean
         node:
@@ -20011,7 +20011,7 @@ components:
           pattern: "/^(?:[a-zA-Z0-9](?:[a-zA-Z0-9\\-]*[a-zA-Z0-9])?)$/"
           type: string
         online:
-          default: 0
+          default: false
           description: Perform an online migration if the vm is running.
           type: boolean
         restart:
@@ -20159,7 +20159,7 @@ components:
       example:
         total: 4
         data:
-          template: 0
+          template: false
           cpus: 6.027456183070403
           vmid: 117307513
           cpu: 0.8008281904610115
@@ -20448,22 +20448,22 @@ components:
         total: 2
         data:
           protection_synflood_burst: 5
-          log_nf_conntrack: 0
+          log_nf_conntrack: false
           log_level_in: ""
           log_level_out: ""
           smurf_log_level: ""
-          nftables: 0
-          nf_conntrack_allow_invalid: 0
+          nftables: false
+          nf_conntrack_allow_invalid: false
           nf_conntrack_tcp_timeout_syn_recv: 34
-          nosmurfs: 0
+          nosmurfs: false
           protection_synflood_rate: 5
           nf_conntrack_max: 32768
           nf_conntrack_helpers: ""
-          protection_synflood: 0
-          enable: 1
+          protection_synflood: false
+          enable: true
           tcp_flags_log_level: ""
-          tcpflags: 0
-          ndp: 1
+          tcpflags: false
+          ndp: true
           nf_conntrack_tcp_timeout_established: 7875
           log_level_forward: ""
         changes: "{}"
@@ -20483,26 +20483,26 @@ components:
       additionalProperties: false
       example:
         protection_synflood_burst: 5
-        log_nf_conntrack: 0
+        log_nf_conntrack: false
         log_level_in: ""
         log_level_out: ""
         smurf_log_level: ""
-        nftables: 0
-        nf_conntrack_allow_invalid: 0
+        nftables: false
+        nf_conntrack_allow_invalid: false
         nf_conntrack_tcp_timeout_syn_recv: 34
-        nosmurfs: 0
+        nosmurfs: false
         delete:
         - delete
         - delete
         protection_synflood_rate: 5
         nf_conntrack_max: 32768
         nf_conntrack_helpers: ""
-        protection_synflood: 0
-        enable: 1
+        protection_synflood: false
+        enable: true
         digest: digest
         tcp_flags_log_level: ""
-        tcpflags: 0
-        ndp: 1
+        tcpflags: false
+        ndp: true
         nf_conntrack_tcp_timeout_established: 7875
         log_level_forward: ""
       properties:
@@ -20519,7 +20519,7 @@ components:
           maxLength: 64
           type: string
         enable:
-          default: 1
+          default: true
           description: Enable host firewall rules.
           type: boolean
         log_level_forward:
@@ -20538,15 +20538,15 @@ components:
           default: nolog
           description: Firewall log levels.
         log_nf_conntrack:
-          default: 0
+          default: false
           description: Enable logging of conntrack information.
           type: boolean
         ndp:
-          default: 1
+          default: true
           description: Enable NDP (Neighbor Discovery Protocol).
           type: boolean
         nf_conntrack_allow_invalid:
-          default: 0
+          default: false
           description: Allow invalid packets on connection tracking.
           type: boolean
         nf_conntrack_helpers:
@@ -20574,15 +20574,15 @@ components:
           minimum: 30
           type: integer
         nftables:
-          default: 0
+          default: false
           description: Enable nftables based firewall (tech preview)
           type: boolean
         nosmurfs:
-          default: 0
+          default: false
           description: Enable SMURFS filter.
           type: boolean
         protection_synflood:
-          default: 0
+          default: false
           description: Enable synflood protection
           type: boolean
         protection_synflood_burst:
@@ -20606,7 +20606,7 @@ components:
           default: nolog
           description: Firewall log levels.
         tcpflags:
-          default: 0
+          default: false
           description: Filter illegal combinations of TCP flags.
           type: boolean
     PveRemotesUpdatePveRemotesByRemoteNodesByNodeFirewallOptionsResponse:
@@ -20784,14 +20784,14 @@ components:
           uplink-id: uplink-id
           vxlan-physdev: vxlan-physdev
           bond_mode: ""
-          autostart: 0
+          autostart: false
           type: ""
           bridge_vids: bridge_vids
           ovs_bridge: ovs_bridge
           options6:
           - options6
           - options6
-          bridge_vlan_aware: 0
+          bridge_vlan_aware: false
           netmask: netmask
           vlan-raw-device: vlan-raw-device
           options:
@@ -20800,9 +20800,9 @@ components:
           address6: address6
           cidr: cidr
           vxlan-id: 7
-          bridge-learning: 0
+          bridge-learning: false
           ovs_options: ovs_options
-          bridge-arp-nd-suppress: 0
+          bridge-arp-nd-suppress: false
           vlan-protocol: ""
           comments6: comments6
           ovs_ports: ovs_ports
@@ -20812,7 +20812,7 @@ components:
           method: ""
           ovs_bonds: ovs_bonds
           cidr6: cidr6
-          active: 0
+          active: false
           bridge-access: 0
           families:
           - inet
@@ -20821,12 +20821,12 @@ components:
           mtu: 40000
           iface: iface
           vlan-id: 943
-          bridge-unicast-flood: 0
+          bridge-unicast-flood: false
           ovs_tag: 2441
           vxlan-local-tunnelip: vxlan-local-tunnelip
           bond_xmit_hash_policy: ""
-          bridge-multicast-flood: 0
-          exists: 0
+          bridge-multicast-flood: false
+          exists: false
           netmask6: 18
           gateway6: gateway6
           vxlan-svcnodeip: vxlan-svcnodeip
@@ -20838,14 +20838,14 @@ components:
           uplink-id: uplink-id
           vxlan-physdev: vxlan-physdev
           bond_mode: ""
-          autostart: 0
+          autostart: false
           type: ""
           bridge_vids: bridge_vids
           ovs_bridge: ovs_bridge
           options6:
           - options6
           - options6
-          bridge_vlan_aware: 0
+          bridge_vlan_aware: false
           netmask: netmask
           vlan-raw-device: vlan-raw-device
           options:
@@ -20854,9 +20854,9 @@ components:
           address6: address6
           cidr: cidr
           vxlan-id: 7
-          bridge-learning: 0
+          bridge-learning: false
           ovs_options: ovs_options
-          bridge-arp-nd-suppress: 0
+          bridge-arp-nd-suppress: false
           vlan-protocol: ""
           comments6: comments6
           ovs_ports: ovs_ports
@@ -20866,7 +20866,7 @@ components:
           method: ""
           ovs_bonds: ovs_bonds
           cidr6: cidr6
-          active: 0
+          active: false
           bridge-access: 0
           families:
           - inet
@@ -20875,12 +20875,12 @@ components:
           mtu: 40000
           iface: iface
           vlan-id: 943
-          bridge-unicast-flood: 0
+          bridge-unicast-flood: false
           ovs_tag: 2441
           vxlan-local-tunnelip: vxlan-local-tunnelip
           bond_xmit_hash_policy: ""
-          bridge-multicast-flood: 0
-          exists: 0
+          bridge-multicast-flood: false
+          exists: false
           netmask6: 18
           gateway6: gateway6
           vxlan-svcnodeip: vxlan-svcnodeip
@@ -21069,7 +21069,7 @@ components:
           - loadavg
           boot-info:
             mode: ""
-            secureboot: 0
+            secureboot: false
           cpuinfo:
             cores: 6
             cpus: 1
@@ -21131,37 +21131,37 @@ components:
         total: 5
         data:
         - avail: 0
-          shared: 0
+          shared: false
           total: 6
           formats:
             default: ""
             supported:
             - qcow2
             - qcow2
-          select_existing: 0
+          select_existing: false
           used_fraction: 5.962133916683182
-          active: 0
+          active: false
           storage: storage
           used: 1
           type: type
           content: ""
-          enabled: 0
+          enabled: false
         - avail: 0
-          shared: 0
+          shared: false
           total: 6
           formats:
             default: ""
             supported:
             - qcow2
             - qcow2
-          select_existing: 0
+          select_existing: false
           used_fraction: 5.962133916683182
-          active: 0
+          active: false
           storage: storage
           used: 1
           type: type
           content: ""
-          enabled: 0
+          enabled: false
         changes: "{}"
       properties:
         data:
@@ -21223,13 +21223,13 @@ components:
         total: 5
         data:
           avail: 0
-          shared: 0
+          shared: false
           total: 6
-          active: 0
+          active: false
           used: 1
           type: type
           content: ""
-          enabled: 0
+          enabled: false
         changes: "{}"
       properties:
         data:
@@ -21269,7 +21269,7 @@ components:
           - loadavg
           boot-info:
             mode: ""
-            secureboot: 0
+            secureboot: false
           cpuinfo:
             cores: 6
             cpus: 1
@@ -21344,7 +21344,7 @@ components:
       example:
         total: 5
         data:
-        - template: 0
+        - template: false
           diskread: 1
           pid: 4
           pressureiosome: 1.4894159098541704
@@ -21365,14 +21365,14 @@ components:
           uptime: 1
           pressurecpufull: 7.386281948385884
           pressurememorysome: 7.457744773683766
-          serial: 0
+          serial: false
           pressureiofull: 1.0246457001441578
           name: name
           diskwrite: 5
           maxmem: 2
           netin: 3
           status: ""
-        - template: 0
+        - template: false
           diskread: 1
           pid: 4
           pressureiosome: 1.4894159098541704
@@ -21393,7 +21393,7 @@ components:
           uptime: 1
           pressurecpufull: 7.386281948385884
           pressurememorysome: 7.457744773683766
-          serial: 0
+          serial: false
           pressureiofull: 1.0246457001441578
           name: name
           diskwrite: 5
@@ -21917,7 +21917,7 @@ components:
           usb10: ""
           unused179: ""
           unused178: ""
-          autostart: 0
+          autostart: false
           unused173: ""
           unused172: ""
           unused171: ""
@@ -21981,7 +21981,7 @@ components:
           unused188: ""
           unused187: ""
           unused186: ""
-          kvm: 1
+          kvm: true
           unused185: ""
           scsi30: ""
           unused189: ""
@@ -22002,7 +22002,7 @@ components:
           unused97: ""
           unused99: ""
           arch: ""
-          localtime: 0
+          localtime: false
           scsi22: ""
           scsi23: ""
           scsi20: ""
@@ -22050,7 +22050,7 @@ components:
           unused213: ""
           unused212: ""
           unused211: ""
-          tablet: 1
+          tablet: true
           cores: 1
           unused207: ""
           lock: ""
@@ -22065,7 +22065,7 @@ components:
           unused201: ""
           unused200: ""
           affinity: affinity
-          template: 0
+          template: false
           unused111: ""
           unused232: ""
           unused110: ""
@@ -22079,7 +22079,7 @@ components:
           unused234: ""
           unused112: ""
           unused233: ""
-          protection: 0
+          protection: false
           cicustom: ""
           smp: 1
           digest: digest
@@ -22156,7 +22156,7 @@ components:
           unused128: ""
           unused249: ""
           unused27: ""
-          allow-ksm: 1
+          allow-ksm: true
           unused127: ""
           unused248: ""
           unused26: ""
@@ -22177,12 +22177,12 @@ components:
           unused245: ""
           unused123: ""
           unused244: ""
-          numa: 0
+          numa: false
           cpu: ""
           unused30: ""
           unused32: ""
           unused31: ""
-          acpi: 1
+          acpi: true
           unused34: ""
           unused33: ""
           unused119: ""
@@ -22265,7 +22265,7 @@ components:
           net5: ""
           startdate: now
           net9: ""
-          freeze: 0
+          freeze: false
           virtio13: ""
           virtio12: ""
           virtio15: ""
@@ -22380,10 +22380,10 @@ components:
           ide1: ""
           hostpci13: ""
           ide0: ""
-          onboot: 0
+          onboot: false
           ide3: ""
           ide2: ""
-          ciupgrade: 1
+          ciupgrade: true
           usb8: ""
           usb9: ""
           usb6: ""
@@ -22395,7 +22395,7 @@ components:
           usb3: ""
           usb0: ""
           usb1: ""
-          keephugepages: 0
+          keephugepages: false
           efidisk0: ""
           audio0: ""
           running-nets-host-mtu: running-nets-host-mtu
@@ -22408,11 +22408,11 @@ components:
           rng0: ""
           vga: ""
           ciuser: ciuser
-          reboot: 1
+          reboot: true
           balloon: 0
           hookscript: hookscript
           vcpus: 1
-          tdf: 0
+          tdf: false
         changes: "{}"
       properties:
         data:
@@ -22446,15 +22446,15 @@ components:
       example:
         total: 0
         data:
-          ipfilter: 0
-          macfilter: 1
+          ipfilter: false
+          macfilter: true
           policy_out: ""
-          radv: 0
+          radv: false
           log_level_in: ""
-          enable: 0
+          enable: false
           log_level_out: ""
-          ndp: 1
-          dhcp: 0
+          ndp: true
+          dhcp: false
           policy_in: ""
         changes: "{}"
       properties:
@@ -22545,8 +22545,8 @@ components:
           mapped-resources:
           - mapped-resources
           - mapped-resources
-          running: 0
-          has-dbus-vmstate: 0
+          running: false
+          has-dbus-vmstate: false
           allowed_nodes:
           - allowed_nodes
           - allowed_nodes
@@ -22566,12 +22566,12 @@ components:
           local_disks:
           - size: 0
             volid: volid
-            cdrom: 0
-            is_unused: 0
+            cdrom: false
+            is_unused: false
           - size: 0
             volid: volid
-            cdrom: 0
-            is_unused: 0
+            cdrom: false
+            is_unused: false
           local_resources:
           - local_resources
           - local_resources
@@ -22602,7 +22602,7 @@ components:
         migration-network: migration-network
         with-local-disks: true
         online: true
-        force: 0
+        force: false
         target-storage:
         - target-storage
         - target-storage
@@ -22614,7 +22614,7 @@ components:
           minimum: 0
           type: integer
         force:
-          default: 0
+          default: false
           description: Allow to migrate VMs with local devices.
           type: boolean
         migration-network:
@@ -22700,7 +22700,7 @@ components:
           minimum: 0
           type: integer
         delete:
-          default: 0
+          default: false
           description: Delete the original VM and related data after successful migration.
           type: boolean
         node:
@@ -22708,7 +22708,7 @@ components:
           pattern: "/^(?:[a-zA-Z0-9](?:[a-zA-Z0-9\\-]*[a-zA-Z0-9])?)$/"
           type: string
         online:
-          default: 0
+          default: false
           description: Perform an online migration if the vm is running.
           type: boolean
         target:
@@ -22842,9 +22842,9 @@ components:
       example:
         total: 5
         data:
-          template: 0
-          agent: 0
-          spice: 0
+          template: false
+          agent: false
+          spice: false
           diskread: 1
           pid: 4
           clipboard: ""
@@ -22866,7 +22866,7 @@ components:
           uptime: 1
           pressurecpufull: 7.386281948385884
           pressurememorysome: 7.457744773683766
-          serial: 0
+          serial: false
           pressureiofull: 1.0246457001441578
           name: name
           ha: "{}"
@@ -23794,16 +23794,16 @@ components:
             node: node
             isis-ifaces: isis-ifaces
             peers: peers
-            ebgp: 0
+            ebgp: false
             isis-net: isis-net
-            bgp-multipath-as-relax: 0
+            bgp-multipath-as-relax: false
             asn: 629561881
             isis-domain: isis-domain
             ebgp-multihop: 5
             loopback: loopback
           peers: peers
-          ebgp: 0
-          bgp-multipath-as-relax: 0
+          ebgp: false
+          bgp-multipath-as-relax: false
           remote: remote
           type: ""
           isis-domain: isis-domain
@@ -23820,16 +23820,16 @@ components:
             node: node
             isis-ifaces: isis-ifaces
             peers: peers
-            ebgp: 0
+            ebgp: false
             isis-net: isis-net
-            bgp-multipath-as-relax: 0
+            bgp-multipath-as-relax: false
             asn: 629561881
             isis-domain: isis-domain
             ebgp-multihop: 5
             loopback: loopback
           peers: peers
-          ebgp: 0
-          bgp-multipath-as-relax: 0
+          ebgp: false
+          bgp-multipath-as-relax: false
           remote: remote
           type: ""
           isis-domain: isis-domain
@@ -23865,12 +23865,12 @@ components:
         total: 1
         data:
         - vnet: vnet
-          vlanaware: 0
-          isolate-ports: 0
+          vlanaware: false
+          isolate-ports: false
           zone: zone
           pending:
-            vlanaware: 0
-            isolate-ports: 0
+            vlanaware: false
+            isolate-ports: false
             zone: zone
             alias: alias
             tag: 1343567
@@ -23881,12 +23881,12 @@ components:
           remote: remote
           type: ""
         - vnet: vnet
-          vlanaware: 0
-          isolate-ports: 0
+          vlanaware: false
+          isolate-ports: false
           zone: zone
           pending:
-            vlanaware: 0
-            isolate-ports: 0
+            vlanaware: false
+            isolate-ports: false
             zone: zone
             alias: alias
             tag: 1343567
@@ -23981,16 +23981,16 @@ components:
             ipam: ipam
             dnszone: dnszone
             reversedns: reversedns
-            disable-arp-nd-suppression: 0
+            disable-arp-nd-suppression: false
             dns: dns
             peers: peers
             rt-import: rt-import
             mac: mac
-            advertise-subnets: 0
+            advertise-subnets: false
             mtu: 6
-            exitnodes-local-routing: 0
+            exitnodes-local-routing: false
             nodes: nodes
-            bridge-disable-mac-learning: 0
+            bridge-disable-mac-learning: false
             vrf-vxlan: 10002800
             vxlan-port: 36945
             bridge: bridge
@@ -24004,7 +24004,7 @@ components:
           remote: remote
           type: ""
           mac: mac
-          advertise-subnets: 0
+          advertise-subnets: false
           zone: zone
           digest: digest
           state: ""
@@ -24016,12 +24016,12 @@ components:
           ipam: ipam
           dnszone: dnszone
           reversedns: reversedns
-          disable-arp-nd-suppression: 0
+          disable-arp-nd-suppression: false
           dns: dns
           mtu: 0
-          exitnodes-local-routing: 0
+          exitnodes-local-routing: false
           nodes: nodes
-          bridge-disable-mac-learning: 0
+          bridge-disable-mac-learning: false
           vrf-vxlan: 11847064
           vxlan-port: 60958
           bridge: bridge
@@ -24031,16 +24031,16 @@ components:
             ipam: ipam
             dnszone: dnszone
             reversedns: reversedns
-            disable-arp-nd-suppression: 0
+            disable-arp-nd-suppression: false
             dns: dns
             peers: peers
             rt-import: rt-import
             mac: mac
-            advertise-subnets: 0
+            advertise-subnets: false
             mtu: 6
-            exitnodes-local-routing: 0
+            exitnodes-local-routing: false
             nodes: nodes
-            bridge-disable-mac-learning: 0
+            bridge-disable-mac-learning: false
             vrf-vxlan: 10002800
             vxlan-port: 36945
             bridge: bridge
@@ -24054,7 +24054,7 @@ components:
           remote: remote
           type: ""
           mac: mac
-          advertise-subnets: 0
+          advertise-subnets: false
           zone: zone
           digest: digest
           state: ""
@@ -24066,12 +24066,12 @@ components:
           ipam: ipam
           dnszone: dnszone
           reversedns: reversedns
-          disable-arp-nd-suppression: 0
+          disable-arp-nd-suppression: false
           dns: dns
           mtu: 0
-          exitnodes-local-routing: 0
+          exitnodes-local-routing: false
           nodes: nodes
-          bridge-disable-mac-learning: 0
+          bridge-disable-mac-learning: false
           vrf-vxlan: 11847064
           vxlan-port: 60958
           bridge: bridge
@@ -24163,7 +24163,7 @@ components:
       example:
         path: path
         roleid: roleid
-        propagate: 1
+        propagate: true
         ugid: ugid
         ugid_type: ""
       properties:
@@ -24174,7 +24174,7 @@ components:
           pattern: "/^(?:/|(?:/(?:[A-Za-z0-9_][A-Za-z0-9._\\-]*))+)$/"
           type: string
         propagate:
-          default: 1
+          default: true
           description: Allow to propagate (inherit) permissions.
           type: boolean
         roleid:
@@ -24368,7 +24368,7 @@ components:
     AccessUsersGetUsersResponse_data_inner_tokens_inner:
       example:
         tokenid: tokenid
-        enable: 1
+        enable: true
         expire: 0
         comment: comment
       properties:
@@ -24378,7 +24378,7 @@ components:
           pattern: "/^[[:^cntrl:]]*$/"
           type: string
         enable:
-          default: 1
+          default: true
           description: Enable the account (default). You can set this to '0' to disable
             the account.
           type: boolean
@@ -24401,19 +24401,19 @@ components:
     AccessUsersGetUsersResponse_data_inner:
       example:
         firstname: firstname
-        enable: 1
+        enable: true
         expire: 0
         comment: comment
         tokens:
         - tokenid: tokenid
-          enable: 1
+          enable: true
           expire: 0
           comment: comment
         - tokenid: tokenid
-          enable: 1
+          enable: true
           expire: 0
           comment: comment
-        totp-locked: 0
+        totp-locked: false
         userid: userid
         email: email
         tfa-locked-until: 6
@@ -24431,7 +24431,7 @@ components:
           pattern: "/^[[:^cntrl:]]*$/"
           type: string
         enable:
-          default: 1
+          default: true
           description: Enable the account (default). You can set this to '0' to disable
             the account.
           type: boolean
@@ -24465,7 +24465,7 @@ components:
             $ref: "#/components/schemas/AccessUsersGetUsersResponse_data_inner_tokens_inner"
           type: array
         totp-locked:
-          default: 0
+          default: false
           description: True if the user is currently locked out of TOTP factors
           type: boolean
         userid:
@@ -24479,7 +24479,7 @@ components:
     AccessUsersGetAccessUsersByUseridResponse_data:
       example:
         firstname: firstname
-        enable: 1
+        enable: true
         expire: 0
         comment: comment
         userid: userid
@@ -24498,7 +24498,7 @@ components:
           pattern: "/^[[:^cntrl:]]*$/"
           type: string
         enable:
-          default: 1
+          default: true
           description: Enable the account (default). You can set this to '0' to disable
             the account.
           type: boolean
@@ -24532,7 +24532,7 @@ components:
     AccessUsersGetTokenResponse_data_inner:
       example:
         tokenid: tokenid
-        enable: 1
+        enable: true
         token-name: token-name
         expire: 0
         comment: comment
@@ -24543,7 +24543,7 @@ components:
           pattern: "/^[[:^cntrl:]]*$/"
           type: string
         enable:
-          default: 1
+          default: true
           description: Enable the account (default). You can set this to '0' to disable
             the account.
           type: boolean
@@ -24599,12 +24599,12 @@ components:
         filter: filter
         mode: ""
         bind-dn: bind-dn
-        default: 0
+        default: false
         user-classes: ""
         port: 5248
         capath: capath
         sync-defaults-options: ""
-        verify: 0
+        verify: false
         comment: comment
         realm: realm
       properties:
@@ -24631,7 +24631,7 @@ components:
           pattern: "/^[[:^cntrl:]]*$/"
           type: string
         default:
-          default: 0
+          default: false
           description: True if you want this to be the default realm selected on login.
           type: boolean
         filter:
@@ -24677,7 +24677,7 @@ components:
             \ then user synchronization will consider all LDAP entities where ``objectClass:\
             \ person`` `or` ``objectClass: user``."
         verify:
-          default: 0
+          default: false
           description: Verify server certificate
           type: boolean
       required:
@@ -24693,12 +24693,12 @@ components:
         filter: filter
         mode: ""
         bind-dn: bind-dn
-        default: 0
+        default: false
         user-classes: ""
         port: 5248
         capath: capath
         sync-defaults-options: ""
-        verify: 0
+        verify: false
         comment: comment
         realm: realm
       properties:
@@ -24725,7 +24725,7 @@ components:
           pattern: "/^[[:^cntrl:]]*$/"
           type: string
         default:
-          default: 0
+          default: false
           description: True if you want this to be the default realm selected on login.
           type: boolean
         filter:
@@ -24775,7 +24775,7 @@ components:
             \ then user synchronization will consider all LDAP entities where ``objectClass:\
             \ person`` `or` ``objectClass: user``."
         verify:
-          default: 0
+          default: false
           description: Verify server certificate
           type: boolean
       required:
@@ -24787,7 +24787,7 @@ components:
       example:
         acr-values: ""
         default: true
-        autocreate: 0
+        autocreate: false
         issuer-url: issuer-url
         client-key: client-key
         comment: comment
@@ -24802,7 +24802,7 @@ components:
           - $ref: "#/components/schemas/PdmAcrValuesField"
           description: OpenID ACR List
         autocreate:
-          default: 0
+          default: false
           description: Automatically create users if they do not exist.
           type: boolean
         client-id:
@@ -27165,16 +27165,16 @@ components:
     PveRemotesGetClusterStatusResponse_data_inner:
       example:
         nodes: 6
-        quorate: 0
+        quorate: false
         level: level
         ip: ip
         name: name
-        online: 0
+        online: false
         id: id
         type: ""
         nodeid: 0
         version: 1
-        local: 0
+        local: false
       properties:
         id:
           description: "FIXME: Missing description in PVE."
@@ -27189,7 +27189,7 @@ components:
             Repository.
           type: string
         local:
-          default: 0
+          default: false
           description: "[node] Indicates if this is the responding node."
           type: boolean
         name:
@@ -27204,11 +27204,11 @@ components:
           format: int64
           type: integer
         online:
-          default: 0
+          default: false
           description: "[node] Indicates if the node is online or offline."
           type: boolean
         quorate:
-          default: 0
+          default: false
           description: |-
             [cluster] Indicates if there is a majority of nodes online to make
             decisions
@@ -27231,13 +27231,13 @@ components:
       example:
         policy_forward: ""
         policy_out: ""
-        ebtables: 1
+        ebtables: true
         enable: 0
         log_ratelimit: ""
         policy_in: ""
       properties:
         ebtables:
-          default: 1
+          default: true
           description: Enable ebtables rules cluster wide.
           type: boolean
         enable:
@@ -27346,7 +27346,7 @@ components:
       - type
     PveRemotesGetLxcResponse_data_inner:
       example:
-        template: 0
+        template: false
         cpus: 6.027456183070403
         vmid: 117307513
         cpu: 0.8008281904610115
@@ -27452,7 +27452,7 @@ components:
           description: "The current configured tags, if any."
           type: string
         template:
-          default: 0
+          default: false
           description: Determines if the guest is a template.
           type: boolean
         uptime:
@@ -27476,7 +27476,7 @@ components:
         arch: ""
         ostype: ""
         env: env
-        unprivileged: 0
+        unprivileged: false
         unused210: ""
         unused214: ""
         unused213: ""
@@ -27503,7 +27503,7 @@ components:
         unused235: ""
         unused234: ""
         unused233: ""
-        protection: 0
+        protection: false
         unused229: ""
         unused228: ""
         unused227: ""
@@ -27640,7 +27640,7 @@ components:
         net16: ""
         memory: 16
         description: description
-        onboot: 0
+        onboot: false
         mp204: ""
         mp203: ""
         mp202: ""
@@ -27692,7 +27692,7 @@ components:
         mp231: ""
         mp230: ""
         timezone: timezone
-        debug: 0
+        debug: false
         mp251: ""
         mp250: ""
         mp255: ""
@@ -27919,7 +27919,7 @@ components:
         dev49: ""
         lock: ""
         cmode: ""
-        template: 0
+        template: false
         unused111: ""
         unused110: ""
         dev10: ""
@@ -28048,7 +28048,7 @@ components:
         unused149: ""
         unused48: ""
         unused144: ""
-        console: 1
+        console: true
         unused143: ""
         unused142: ""
         unused141: ""
@@ -28319,7 +28319,7 @@ components:
             attach to /dev/console instead. If you set cmode to 'shell', it simply
             invokes a shell inside the container (no login).
         console:
-          default: 1
+          default: true
           description: Attach a console device (/dev/console) to the container.
           type: boolean
         cores:
@@ -28347,7 +28347,7 @@ components:
           minimum: 0
           type: integer
         debug:
-          default: 0
+          default: false
           description: |-
             Try to be more verbose. For now this only enables debug log-level on
             start.
@@ -30845,7 +30845,7 @@ components:
           - $ref: "#/components/schemas/PdmNetField"
           description: Specifies network interfaces for the container.
         onboot:
-          default: 0
+          default: false
           description: Specifies whether a container will be started during system
             bootup.
           type: boolean
@@ -30858,7 +30858,7 @@ components:
             /usr/share/lxc/config/<ostype>.common.conf. Value 'unmanaged' can be used to
             skip and OS specific setup.
         protection:
-          default: 0
+          default: false
           description: |-
             Sets the protection flag of the container. This will prevent the CT or
             CT's disk remove/update operation.
@@ -30892,7 +30892,7 @@ components:
           type: string
           x-pdm-pattern-original: "/^(?i)[a-z0-9_][a-z0-9_\\-+.]*$/"
         template:
-          default: 0
+          default: false
           description: Enable/disable Template.
           type: boolean
         timezone:
@@ -30909,7 +30909,7 @@ components:
           minimum: 0
           type: integer
         unprivileged:
-          default: 0
+          default: false
           description: |-
             Makes the container run as unprivileged user. For creation, the default
             is 1. For restore, the default is the value from the backup. (Should not
@@ -32999,27 +32999,27 @@ components:
       - unused99
     PveRemotesGetPveRemotesByRemoteLxcByVmidFirewallOptionsResponse_data:
       example:
-        ipfilter: 0
-        macfilter: 1
+        ipfilter: false
+        macfilter: true
         policy_out: ""
-        radv: 0
+        radv: false
         log_level_in: ""
-        enable: 0
+        enable: false
         log_level_out: ""
-        ndp: 1
-        dhcp: 0
+        ndp: true
+        dhcp: false
         policy_in: ""
       properties:
         dhcp:
-          default: 0
+          default: false
           description: Enable DHCP.
           type: boolean
         enable:
-          default: 0
+          default: false
           description: Enable/disable firewall rules.
           type: boolean
         ipfilter:
-          default: 0
+          default: false
           description: |-
             Enable default IP filters. This is equivalent to adding an empty
             ipfilter-net<id> ipset for every interface. Such ipsets implicitly
@@ -33038,11 +33038,11 @@ components:
           default: nolog
           description: Firewall log levels.
         macfilter:
-          default: 1
+          default: true
           description: Enable/disable MAC address filter.
           type: boolean
         ndp:
-          default: 1
+          default: true
           description: Enable NDP (Neighbor Discovery Protocol).
           type: boolean
         policy_in:
@@ -33054,7 +33054,7 @@ components:
           - $ref: "#/components/schemas/PdmPolicyInEnum"
           description: Firewall IO policies.
         radv:
-          default: 0
+          default: false
           description: Allow sending Router Advertisement.
           type: boolean
     PveRemotesGetRrddataResponse_data_inner:
@@ -33114,7 +33114,7 @@ components:
       - time
     PveRemotesGetPveRemotesByRemoteLxcByVmidStatusResponse_data:
       example:
-        template: 0
+        template: false
         cpus: 6.027456183070403
         vmid: 117307513
         cpu: 0.8008281904610115
@@ -33225,7 +33225,7 @@ components:
           description: "The current configured tags, if any."
           type: string
         template:
-          default: 0
+          default: false
           description: Determines if the guest is a template.
           type: boolean
         uptime:
@@ -33292,27 +33292,27 @@ components:
     PveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponse_data:
       example:
         protection_synflood_burst: 5
-        log_nf_conntrack: 0
+        log_nf_conntrack: false
         log_level_in: ""
         log_level_out: ""
         smurf_log_level: ""
-        nftables: 0
-        nf_conntrack_allow_invalid: 0
+        nftables: false
+        nf_conntrack_allow_invalid: false
         nf_conntrack_tcp_timeout_syn_recv: 34
-        nosmurfs: 0
+        nosmurfs: false
         protection_synflood_rate: 5
         nf_conntrack_max: 32768
         nf_conntrack_helpers: ""
-        protection_synflood: 0
-        enable: 1
+        protection_synflood: false
+        enable: true
         tcp_flags_log_level: ""
-        tcpflags: 0
-        ndp: 1
+        tcpflags: false
+        ndp: true
         nf_conntrack_tcp_timeout_established: 7875
         log_level_forward: ""
       properties:
         enable:
-          default: 1
+          default: true
           description: Enable host firewall rules.
           type: boolean
         log_level_forward:
@@ -33331,15 +33331,15 @@ components:
           default: nolog
           description: Firewall log levels.
         log_nf_conntrack:
-          default: 0
+          default: false
           description: Enable logging of conntrack information.
           type: boolean
         ndp:
-          default: 1
+          default: true
           description: Enable NDP (Neighbor Discovery Protocol).
           type: boolean
         nf_conntrack_allow_invalid:
-          default: 0
+          default: false
           description: Allow invalid packets on connection tracking.
           type: boolean
         nf_conntrack_helpers:
@@ -33367,15 +33367,15 @@ components:
           minimum: 30
           type: integer
         nftables:
-          default: 0
+          default: false
           description: Enable nftables based firewall (tech preview)
           type: boolean
         nosmurfs:
-          default: 0
+          default: false
           description: Enable SMURFS filter.
           type: boolean
         protection_synflood:
-          default: 0
+          default: false
           description: Enable synflood protection
           type: boolean
         protection_synflood_burst:
@@ -33399,7 +33399,7 @@ components:
           default: nolog
           description: Firewall log levels.
         tcpflags:
-          default: 0
+          default: false
           description: Filter illegal combinations of TCP flags.
           type: boolean
     PveRemotesGetNetworkResponse_data_inner:
@@ -33410,14 +33410,14 @@ components:
         uplink-id: uplink-id
         vxlan-physdev: vxlan-physdev
         bond_mode: ""
-        autostart: 0
+        autostart: false
         type: ""
         bridge_vids: bridge_vids
         ovs_bridge: ovs_bridge
         options6:
         - options6
         - options6
-        bridge_vlan_aware: 0
+        bridge_vlan_aware: false
         netmask: netmask
         vlan-raw-device: vlan-raw-device
         options:
@@ -33426,9 +33426,9 @@ components:
         address6: address6
         cidr: cidr
         vxlan-id: 7
-        bridge-learning: 0
+        bridge-learning: false
         ovs_options: ovs_options
-        bridge-arp-nd-suppress: 0
+        bridge-arp-nd-suppress: false
         vlan-protocol: ""
         comments6: comments6
         ovs_ports: ovs_ports
@@ -33438,7 +33438,7 @@ components:
         method: ""
         ovs_bonds: ovs_bonds
         cidr6: cidr6
-        active: 0
+        active: false
         bridge-access: 0
         families:
         - inet
@@ -33447,12 +33447,12 @@ components:
         mtu: 40000
         iface: iface
         vlan-id: 943
-        bridge-unicast-flood: 0
+        bridge-unicast-flood: false
         ovs_tag: 2441
         vxlan-local-tunnelip: vxlan-local-tunnelip
         bond_xmit_hash_policy: ""
-        bridge-multicast-flood: 0
-        exists: 0
+        bridge-multicast-flood: false
+        exists: false
         netmask6: 18
         gateway6: gateway6
         vxlan-svcnodeip: vxlan-svcnodeip
@@ -33460,7 +33460,7 @@ components:
         gateway: gateway
       properties:
         active:
-          default: 0
+          default: false
           description: Set to true if the interface is active.
           type: boolean
         address:
@@ -33470,7 +33470,7 @@ components:
           description: IP address.
           type: string
         autostart:
-          default: 0
+          default: false
           description: Automatically start interface on boot.
           type: boolean
         bond-primary:
@@ -33492,19 +33492,19 @@ components:
           format: int64
           type: integer
         bridge-arp-nd-suppress:
-          default: 0
+          default: false
           description: Bridge port ARP/ND suppress flag.
           type: boolean
         bridge-learning:
-          default: 0
+          default: false
           description: Bridge port learning flag.
           type: boolean
         bridge-multicast-flood:
-          default: 0
+          default: false
           description: Bridge port multicast flood flag.
           type: boolean
         bridge-unicast-flood:
-          default: 0
+          default: false
           description: Bridge port unicast flood flag.
           type: boolean
         bridge_ports:
@@ -33517,7 +33517,7 @@ components:
             bridge is VLAN aware.
           type: string
         bridge_vlan_aware:
-          default: 0
+          default: false
           description: Enable bridge vlan support.
           type: boolean
         cidr:
@@ -33533,7 +33533,7 @@ components:
           description: Comments
           type: string
         exists:
-          default: 0
+          default: false
           description: Set to true if the interface physically exists.
           type: boolean
         families:
@@ -33729,14 +33729,14 @@ components:
       description: Meta-information about the boot mode.
       example:
         mode: ""
-        secureboot: 0
+        secureboot: false
       properties:
         mode:
           allOf:
           - $ref: "#/components/schemas/PdmNodesStatusModeEnum"
           description: Through which firmware the system got booted.
         secureboot:
-          default: 0
+          default: false
           description: "System is booted in secure mode, only applicable for the \"\
             efi\" mode."
           type: boolean
@@ -33876,7 +33876,7 @@ components:
         - loadavg
         boot-info:
           mode: ""
-          secureboot: 0
+          secureboot: false
         cpuinfo:
           cores: 6
           cpus: 1
@@ -33938,24 +33938,24 @@ components:
     PveRemotesGetStorageResponse_data_inner:
       example:
         avail: 0
-        shared: 0
+        shared: false
         total: 6
         formats:
           default: ""
           supported:
           - qcow2
           - qcow2
-        select_existing: 0
+        select_existing: false
         used_fraction: 5.962133916683182
-        active: 0
+        active: false
         storage: storage
         used: 1
         type: type
         content: ""
-        enabled: 0
+        enabled: false
       properties:
         active:
-          default: 0
+          default: false
           description: Set when storage is accessible.
           type: boolean
         avail:
@@ -33967,19 +33967,19 @@ components:
           - $ref: "#/components/schemas/PdmContentField"
           description: Allowed storage content types.
         enabled:
-          default: 0
+          default: false
           description: Set when storage is enabled (not disabled).
           type: boolean
         formats:
           $ref: "#/components/schemas/PveRemotesGetStorageResponse_data_inner_formats"
         select_existing:
-          default: 0
+          default: false
           description: |-
             Instead of creating new volumes, one must select one that is already
             existing. Only included if 'format' parameter is set.
           type: boolean
         shared:
-          default: 0
+          default: false
           description: Shared flag from storage configuration.
           type: boolean
         storage:
@@ -34026,16 +34026,16 @@ components:
     PveRemotesGetPveRemotesByRemoteNodesByNodeStorageByStorageStatusResponse_data:
       example:
         avail: 0
-        shared: 0
+        shared: false
         total: 6
-        active: 0
+        active: false
         used: 1
         type: type
         content: ""
-        enabled: 0
+        enabled: false
       properties:
         active:
-          default: 0
+          default: false
           description: Set when storage is accessible.
           type: boolean
         avail:
@@ -34047,11 +34047,11 @@ components:
           - $ref: "#/components/schemas/PdmContentField"
           description: Allowed storage content types.
         enabled:
-          default: 0
+          default: false
           description: Set when storage is enabled (not disabled).
           type: boolean
         shared:
-          default: 0
+          default: false
           description: Shared flag from storage configuration.
           type: boolean
         total:
@@ -34070,7 +34070,7 @@ components:
       - type
     PveRemotesGetQemuResponse_data_inner:
       example:
-        template: 0
+        template: false
         diskread: 1
         pid: 4
         pressureiosome: 1.4894159098541704
@@ -34091,7 +34091,7 @@ components:
         uptime: 1
         pressurecpufull: 7.386281948385884
         pressurememorysome: 7.457744773683766
-        serial: 0
+        serial: false
         pressureiofull: 1.0246457001441578
         name: name
         diskwrite: 5
@@ -34185,7 +34185,7 @@ components:
           description: The QEMU version the VM is currently using (if running).
           type: string
         serial:
-          default: 0
+          default: false
           description: Guest has serial device configured.
           type: boolean
         status:
@@ -34196,7 +34196,7 @@ components:
           description: "The current configured tags, if any"
           type: string
         template:
-          default: 0
+          default: false
           description: Determines if the guest is a template.
           type: boolean
         uptime:
@@ -34225,7 +34225,7 @@ components:
         usb10: ""
         unused179: ""
         unused178: ""
-        autostart: 0
+        autostart: false
         unused173: ""
         unused172: ""
         unused171: ""
@@ -34289,7 +34289,7 @@ components:
         unused188: ""
         unused187: ""
         unused186: ""
-        kvm: 1
+        kvm: true
         unused185: ""
         scsi30: ""
         unused189: ""
@@ -34310,7 +34310,7 @@ components:
         unused97: ""
         unused99: ""
         arch: ""
-        localtime: 0
+        localtime: false
         scsi22: ""
         scsi23: ""
         scsi20: ""
@@ -34358,7 +34358,7 @@ components:
         unused213: ""
         unused212: ""
         unused211: ""
-        tablet: 1
+        tablet: true
         cores: 1
         unused207: ""
         lock: ""
@@ -34373,7 +34373,7 @@ components:
         unused201: ""
         unused200: ""
         affinity: affinity
-        template: 0
+        template: false
         unused111: ""
         unused232: ""
         unused110: ""
@@ -34387,7 +34387,7 @@ components:
         unused234: ""
         unused112: ""
         unused233: ""
-        protection: 0
+        protection: false
         cicustom: ""
         smp: 1
         digest: digest
@@ -34464,7 +34464,7 @@ components:
         unused128: ""
         unused249: ""
         unused27: ""
-        allow-ksm: 1
+        allow-ksm: true
         unused127: ""
         unused248: ""
         unused26: ""
@@ -34485,12 +34485,12 @@ components:
         unused245: ""
         unused123: ""
         unused244: ""
-        numa: 0
+        numa: false
         cpu: ""
         unused30: ""
         unused32: ""
         unused31: ""
-        acpi: 1
+        acpi: true
         unused34: ""
         unused33: ""
         unused119: ""
@@ -34573,7 +34573,7 @@ components:
         net5: ""
         startdate: now
         net9: ""
-        freeze: 0
+        freeze: false
         virtio13: ""
         virtio12: ""
         virtio15: ""
@@ -34688,10 +34688,10 @@ components:
         ide1: ""
         hostpci13: ""
         ide0: ""
-        onboot: 0
+        onboot: false
         ide3: ""
         ide2: ""
-        ciupgrade: 1
+        ciupgrade: true
         usb8: ""
         usb9: ""
         usb6: ""
@@ -34703,7 +34703,7 @@ components:
         usb3: ""
         usb0: ""
         usb1: ""
-        keephugepages: 0
+        keephugepages: false
         efidisk0: ""
         audio0: ""
         running-nets-host-mtu: running-nets-host-mtu
@@ -34716,14 +34716,14 @@ components:
         rng0: ""
         vga: ""
         ciuser: ciuser
-        reboot: 1
+        reboot: true
         balloon: 0
         hookscript: hookscript
         vcpus: 1
-        tdf: 0
+        tdf: false
       properties:
         acpi:
-          default: 1
+          default: true
           description: Enable/disable ACPI.
           type: boolean
         affinity:
@@ -34739,7 +34739,7 @@ components:
             Enable/disable communication with the QEMU Guest Agent and its
             properties.
         allow-ksm:
-          default: 1
+          default: true
           description: |-
             Allow memory pages of this guest to be merged via KSM (Kernel Samepage
             Merging).
@@ -34760,7 +34760,7 @@ components:
           - $ref: "#/components/schemas/PdmAudioField"
           description: "Configure a audio device, useful in combination with QXL/Spice."
         autostart:
-          default: 0
+          default: false
           description: Automatic restart after crash (currently ignored).
           type: boolean
         balloon:
@@ -34811,7 +34811,7 @@ components:
             configured operating system type (`ostype`. We use the `nocloud` format for
             Linux, and `configdrive2` for windows.
         ciupgrade:
-          default: 1
+          default: true
           description: "cloud-init: do an automatic package upgrade after the first\
             \ boot."
           type: boolean
@@ -34859,7 +34859,7 @@ components:
           - $ref: "#/components/schemas/PdmEfidiskField"
           description: Configure a disk for storing EFI vars.
         freeze:
-          default: 0
+          default: false
           description: Freeze CPU at startup (use 'c' monitor command to start execution).
           type: boolean
         hookscript:
@@ -35456,7 +35456,7 @@ components:
             Inter-VM shared memory. Useful for direct communication between VMs, or
             to the host.
         keephugepages:
-          default: 0
+          default: false
           description: |-
             Use together with hugepages. If enabled, hugepages will not not be
             deleted after VM shutdown and can be used for subsequent starts.
@@ -35468,11 +35468,11 @@ components:
             Keyboard layout for VNC server. This option is generally not required and is
             often better handled from within the guest OS.
         kvm:
-          default: 1
+          default: true
           description: Enable/disable KVM hardware virtualization.
           type: boolean
         localtime:
-          default: 0
+          default: false
           description: |-
             Set the real time clock (RTC) to local time. This is enabled by default
             if the `ostype` indicates a Microsoft Windows OS.
@@ -35647,7 +35647,7 @@ components:
           - $ref: "#/components/schemas/PdmPveRemotesNetField"
           description: Specify network devices.
         numa:
-          default: 0
+          default: false
           description: Enable/disable NUMA.
           type: boolean
         numa_array0:
@@ -35683,7 +35683,7 @@ components:
           - $ref: "#/components/schemas/PdmNumaArrayField"
           description: NUMA topology.
         onboot:
-          default: 0
+          default: false
           description: Specifies whether a VM will be started during system bootup.
           type: boolean
         ostype:
@@ -35708,13 +35708,13 @@ components:
           type: string
           x-pdm-pattern-original: "/^(?i:[a-z][a-z0-9_-]+)$/"
         protection:
-          default: 0
+          default: false
           description: |-
             Sets the protection flag of the VM. This will disable the remove VM and
             remove disk operations.
           type: boolean
         reboot:
-          default: 1
+          default: true
           description: Allow reboot. If set to '0' the VM exit on reboot.
           type: boolean
         rng0:
@@ -35965,7 +35965,7 @@ components:
           type: string
           x-pdm-typetext: "[[order=]\\d+] [,up=\\d+] [,down=\\d+] "
         tablet:
-          default: 1
+          default: true
           description: Enable/disable the USB tablet device.
           type: boolean
         tags:
@@ -35973,11 +35973,11 @@ components:
           type: string
           x-pdm-pattern-original: "/^(?i)[a-z0-9_][a-z0-9_\\-+.]*$/"
         tdf:
-          default: 0
+          default: false
           description: Enable/disable time drift fix.
           type: boolean
         template:
-          default: 0
+          default: false
           description: Enable/disable Template.
           type: boolean
         tpmstate0:
@@ -37916,15 +37916,15 @@ components:
       example:
         size: 0
         volid: volid
-        cdrom: 0
-        is_unused: 0
+        cdrom: false
+        is_unused: false
       properties:
         cdrom:
-          default: 0
+          default: false
           description: True if the disk is a cdrom.
           type: boolean
         is_unused:
-          default: 0
+          default: false
           description: True if the disk is unused.
           type: boolean
         size:
@@ -37982,8 +37982,8 @@ components:
         mapped-resources:
         - mapped-resources
         - mapped-resources
-        running: 0
-        has-dbus-vmstate: 0
+        running: false
+        has-dbus-vmstate: false
         allowed_nodes:
         - allowed_nodes
         - allowed_nodes
@@ -38003,12 +38003,12 @@ components:
         local_disks:
         - size: 0
           volid: volid
-          cdrom: 0
-          is_unused: 0
+          cdrom: false
+          is_unused: false
         - size: 0
           volid: volid
-          cdrom: 0
-          is_unused: 0
+          cdrom: false
+          is_unused: false
         local_resources:
         - local_resources
         - local_resources
@@ -38026,7 +38026,7 @@ components:
             type: string
           type: array
         has-dbus-vmstate:
-          default: 0
+          default: false
           description: |-
             Whether the VM host supports migrating additional VM state, such as
             conntrack entries.
@@ -38057,7 +38057,7 @@ components:
         not_allowed_nodes:
           $ref: "#/components/schemas/PveRemotesGetMigrateResponse_data_not_allowed_nodes"
         running:
-          default: 0
+          default: false
           description: Determines if the VM is running.
           type: boolean
       required:
@@ -38119,9 +38119,9 @@ components:
       - time
     PveRemotesGetPveRemotesByRemoteQemuByVmidStatusResponse_data:
       example:
-        template: 0
-        agent: 0
-        spice: 0
+        template: false
+        agent: false
+        spice: false
         diskread: 1
         pid: 4
         clipboard: ""
@@ -38143,7 +38143,7 @@ components:
         uptime: 1
         pressurecpufull: 7.386281948385884
         pressurememorysome: 7.457744773683766
-        serial: 0
+        serial: false
         pressureiofull: 1.0246457001441578
         name: name
         ha: "{}"
@@ -38153,7 +38153,7 @@ components:
         status: ""
       properties:
         agent:
-          default: 0
+          default: false
           description: QEMU Guest Agent is enabled in config.
           type: boolean
         clipboard:
@@ -38252,11 +38252,11 @@ components:
           description: The QEMU version the VM is currently using (if running).
           type: string
         serial:
-          default: 0
+          default: false
           description: Guest has serial device configured.
           type: boolean
         spice:
-          default: 0
+          default: false
           description: QEMU VGA configuration supports spice.
           type: boolean
         status:
@@ -38267,7 +38267,7 @@ components:
           description: "The current configured tags, if any"
           type: string
         template:
-          default: 0
+          default: false
           description: Determines if the guest is a template.
           type: boolean
         uptime:
@@ -38659,9 +38659,9 @@ components:
         node: node
         isis-ifaces: isis-ifaces
         peers: peers
-        ebgp: 0
+        ebgp: false
         isis-net: isis-net
-        bgp-multipath-as-relax: 0
+        bgp-multipath-as-relax: false
         asn: 629561881
         isis-domain: isis-domain
         ebgp-multihop: 5
@@ -38673,13 +38673,13 @@ components:
           minimum: 0
           type: integer
         bgp-multipath-as-relax:
-          default: 0
+          default: false
           description: |-
             Consider different AS paths of equal length for multipath computation.
             BGP only.
           type: boolean
         ebgp:
-          default: 0
+          default: false
           description: Enable eBGP (remote-as external). BGP only.
           type: boolean
         ebgp-multihop:
@@ -38720,16 +38720,16 @@ components:
           node: node
           isis-ifaces: isis-ifaces
           peers: peers
-          ebgp: 0
+          ebgp: false
           isis-net: isis-net
-          bgp-multipath-as-relax: 0
+          bgp-multipath-as-relax: false
           asn: 629561881
           isis-domain: isis-domain
           ebgp-multihop: 5
           loopback: loopback
         peers: peers
-        ebgp: 0
-        bgp-multipath-as-relax: 0
+        ebgp: false
+        bgp-multipath-as-relax: false
         remote: remote
         type: ""
         isis-domain: isis-domain
@@ -38748,7 +38748,7 @@ components:
           minimum: 0
           type: integer
         bgp-multipath-as-relax:
-          default: 0
+          default: false
           description: |-
             Consider different AS paths of equal length for multipath computation.
             BGP only.
@@ -38760,7 +38760,7 @@ components:
           description: Digest of the controller section.
           type: string
         ebgp:
-          default: 0
+          default: false
           description: Enable eBGP (remote-as external). BGP only.
           type: boolean
         ebgp-multihop:
@@ -38817,8 +38817,8 @@ components:
     SdnVnetsGetVnetsResponse_data_inner_pending:
       description: Changes that have not yet been applied to the running configuration.
       example:
-        vlanaware: 0
-        isolate-ports: 0
+        vlanaware: false
+        isolate-ports: false
         zone: zone
         alias: alias
         tag: 1343567
@@ -38828,7 +38828,7 @@ components:
           maxLength: 256
           type: string
         isolate-ports:
-          default: 0
+          default: false
           description: |-
             If true, sets the isolated property for all interfaces on the bridge of
             this VNet.
@@ -38841,7 +38841,7 @@ components:
           minimum: 1
           type: integer
         vlanaware:
-          default: 0
+          default: false
           description: Allow VLANs to pass through this VNet.
           type: boolean
         zone:
@@ -38850,12 +38850,12 @@ components:
     SdnVnetsGetVnetsResponse_data_inner:
       example:
         vnet: vnet
-        vlanaware: 0
-        isolate-ports: 0
+        vlanaware: false
+        isolate-ports: false
         zone: zone
         pending:
-          vlanaware: 0
-          isolate-ports: 0
+          vlanaware: false
+          isolate-ports: false
           zone: zone
           alias: alias
           tag: 1343567
@@ -38874,7 +38874,7 @@ components:
           description: Digest of the VNet section.
           type: string
         isolate-ports:
-          default: 0
+          default: false
           description: |-
             If true, sets the isolated property for all interfaces on the bridge of
             this VNet.
@@ -38903,7 +38903,7 @@ components:
           - $ref: "#/components/schemas/PdmSdnVnetsTypeEnum"
           description: Type of the VNet.
         vlanaware:
-          default: 0
+          default: false
           description: Allow VLANs to pass through this VNet.
           type: boolean
         vnet:
@@ -38940,16 +38940,16 @@ components:
         ipam: ipam
         dnszone: dnszone
         reversedns: reversedns
-        disable-arp-nd-suppression: 0
+        disable-arp-nd-suppression: false
         dns: dns
         peers: peers
         rt-import: rt-import
         mac: mac
-        advertise-subnets: 0
+        advertise-subnets: false
         mtu: 6
-        exitnodes-local-routing: 0
+        exitnodes-local-routing: false
         nodes: nodes
-        bridge-disable-mac-learning: 0
+        bridge-disable-mac-learning: false
         vrf-vxlan: 10002800
         vxlan-port: 36945
         bridge: bridge
@@ -38960,7 +38960,7 @@ components:
         dhcp: ""
       properties:
         advertise-subnets:
-          default: 0
+          default: false
           description: |-
             Advertise IP prefixes (Type-5 routes) instead of MAC/IP pairs (Type-2
             routes). EVPN zone only.
@@ -38970,7 +38970,7 @@ components:
             only.
           type: string
         bridge-disable-mac-learning:
-          default: 0
+          default: false
           description: Disable auto mac learning. VLAN zone only.
           type: boolean
         controller:
@@ -38981,7 +38981,7 @@ components:
           - $ref: "#/components/schemas/PdmDhcpEnum"
           description: Name of DHCP server backend for this zone.
         disable-arp-nd-suppression:
-          default: 0
+          default: false
           description: Suppress IPv4 ARP && IPv6 Neighbour Discovery messages. EVPN
             zone only.
           type: boolean
@@ -38998,7 +38998,7 @@ components:
           type: string
           x-pdm-pattern-original: "/^(?i:[a-z0-9](?i:[a-z0-9\\-]*[a-z0-9])?)$/"
         exitnodes-local-routing:
-          default: 0
+          default: false
           description: |-
             Create routes on the exit nodes, so they can connect to EVPN guests.
             EVPN zone only.
@@ -39062,16 +39062,16 @@ components:
           ipam: ipam
           dnszone: dnszone
           reversedns: reversedns
-          disable-arp-nd-suppression: 0
+          disable-arp-nd-suppression: false
           dns: dns
           peers: peers
           rt-import: rt-import
           mac: mac
-          advertise-subnets: 0
+          advertise-subnets: false
           mtu: 6
-          exitnodes-local-routing: 0
+          exitnodes-local-routing: false
           nodes: nodes
-          bridge-disable-mac-learning: 0
+          bridge-disable-mac-learning: false
           vrf-vxlan: 10002800
           vxlan-port: 36945
           bridge: bridge
@@ -39085,7 +39085,7 @@ components:
         remote: remote
         type: ""
         mac: mac
-        advertise-subnets: 0
+        advertise-subnets: false
         zone: zone
         digest: digest
         state: ""
@@ -39097,19 +39097,19 @@ components:
         ipam: ipam
         dnszone: dnszone
         reversedns: reversedns
-        disable-arp-nd-suppression: 0
+        disable-arp-nd-suppression: false
         dns: dns
         mtu: 0
-        exitnodes-local-routing: 0
+        exitnodes-local-routing: false
         nodes: nodes
-        bridge-disable-mac-learning: 0
+        bridge-disable-mac-learning: false
         vrf-vxlan: 11847064
         vxlan-port: 60958
         bridge: bridge
         exitnodes: exitnodes
       properties:
         advertise-subnets:
-          default: 0
+          default: false
           description: |-
             Advertise IP prefixes (Type-5 routes) instead of MAC/IP pairs (Type-2
             routes). EVPN zone only.
@@ -39119,7 +39119,7 @@ components:
             only.
           type: string
         bridge-disable-mac-learning:
-          default: 0
+          default: false
           description: Disable auto mac learning. VLAN zone only.
           type: boolean
         controller:
@@ -39133,7 +39133,7 @@ components:
           description: Digest of the controller section.
           type: string
         disable-arp-nd-suppression:
-          default: 0
+          default: false
           description: Suppress IPv4 ARP && IPv6 Neighbour Discovery messages. EVPN
             zone only.
           type: boolean
@@ -39150,7 +39150,7 @@ components:
           type: string
           x-pdm-pattern-original: "/^(?i:[a-z0-9](?i:[a-z0-9\\-]*[a-z0-9])?)$/"
         exitnodes-local-routing:
-          default: 0
+          default: false
           description: |-
             Create routes on the exit nodes, so they can connect to EVPN guests.
             EVPN zone only.

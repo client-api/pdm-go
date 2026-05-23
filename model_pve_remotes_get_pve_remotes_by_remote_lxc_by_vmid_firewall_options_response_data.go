@@ -61,21 +61,21 @@ type _PveRemotesGetPveRemotesByRemoteLxcByVmidFirewallOptionsResponseData PveRem
 // will change when the set of required properties is changed
 func NewPveRemotesGetPveRemotesByRemoteLxcByVmidFirewallOptionsResponseData() *PveRemotesGetPveRemotesByRemoteLxcByVmidFirewallOptionsResponseData {
 	this := PveRemotesGetPveRemotesByRemoteLxcByVmidFirewallOptionsResponseData{}
-	var dhcp bool = 0
+	var dhcp bool = false
 	this.Dhcp = &dhcp
-	var enable bool = 0
+	var enable bool = false
 	this.Enable = &enable
-	var ipfilter bool = 0
+	var ipfilter bool = false
 	this.Ipfilter = &ipfilter
 	var logLevelIn PdmLogLevelInEnum = PDMLOGLEVELINENUM_NOLOG
 	this.LogLevelIn = &logLevelIn
 	var logLevelOut PdmLogLevelInEnum = PDMLOGLEVELINENUM_NOLOG
 	this.LogLevelOut = &logLevelOut
-	var macfilter bool = 1
+	var macfilter bool = true
 	this.Macfilter = &macfilter
-	var ndp bool = 1
+	var ndp bool = true
 	this.Ndp = &ndp
-	var radv bool = 0
+	var radv bool = false
 	this.Radv = &radv
 	return &this
 }
@@ -86,13 +86,13 @@ func NewPveRemotesGetPveRemotesByRemoteLxcByVmidFirewallOptionsResponseData() *P
 func NewPveRemotesGetPveRemotesByRemoteLxcByVmidFirewallOptionsResponseDataWithDefaults() *PveRemotesGetPveRemotesByRemoteLxcByVmidFirewallOptionsResponseData {
 	this := PveRemotesGetPveRemotesByRemoteLxcByVmidFirewallOptionsResponseData{}
 
-	var dhcp bool = 0
+	var dhcp bool = false
 	this.Dhcp = &dhcp
 
-	var enable bool = 0
+	var enable bool = false
 	this.Enable = &enable
 
-	var ipfilter bool = 0
+	var ipfilter bool = false
 	this.Ipfilter = &ipfilter
 
 	var logLevelIn PdmLogLevelInEnum = PDMLOGLEVELINENUM_NOLOG
@@ -101,15 +101,15 @@ func NewPveRemotesGetPveRemotesByRemoteLxcByVmidFirewallOptionsResponseDataWithD
 	var logLevelOut PdmLogLevelInEnum = PDMLOGLEVELINENUM_NOLOG
 	this.LogLevelOut = &logLevelOut
 
-	var macfilter bool = 1
+	var macfilter bool = true
 	this.Macfilter = &macfilter
 
-	var ndp bool = 1
+	var ndp bool = true
 	this.Ndp = &ndp
 
 
 
-	var radv bool = 0
+	var radv bool = false
 	this.Radv = &radv
 
 	return &this

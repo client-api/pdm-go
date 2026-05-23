@@ -1427,7 +1427,7 @@ func (a *PbsRemotesAPIService) PbsRemotesGetLogExecute(r ApiPbsRemotesGetLogRequ
 	if r.download != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "download", r.download, "form", "")
 	} else {
-		var defaultValue bool = 0
+		var defaultValue bool = false
 		parameterAddToHeaderOrQuery(localVarQueryParams, "download", defaultValue, "form", "")
 		r.download = &defaultValue
 	}
@@ -2989,7 +2989,7 @@ func (a *PbsRemotesAPIService) PbsRemotesGetPbsRemotesByRemoteTasksByUpidStatusE
 	if r.wait != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "wait", r.wait, "form", "")
 	} else {
-		var defaultValue bool = 0
+		var defaultValue bool = false
 		parameterAddToHeaderOrQuery(localVarQueryParams, "wait", defaultValue, "form", "")
 		r.wait = &defaultValue
 	}

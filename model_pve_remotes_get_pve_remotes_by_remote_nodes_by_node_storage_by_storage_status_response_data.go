@@ -56,12 +56,12 @@ type _PveRemotesGetPveRemotesByRemoteNodesByNodeStorageByStorageStatusResponseDa
 // will change when the set of required properties is changed
 func NewPveRemotesGetPveRemotesByRemoteNodesByNodeStorageByStorageStatusResponseData(content PdmContentField, type_ string) *PveRemotesGetPveRemotesByRemoteNodesByNodeStorageByStorageStatusResponseData {
 	this := PveRemotesGetPveRemotesByRemoteNodesByNodeStorageByStorageStatusResponseData{}
-	var active bool = 0
+	var active bool = false
 	this.Active = &active
 	this.Content = content
-	var enabled bool = 0
+	var enabled bool = false
 	this.Enabled = &enabled
-	var shared bool = 0
+	var shared bool = false
 	this.Shared = &shared
 	this.Type = type_
 	return &this
@@ -73,15 +73,15 @@ func NewPveRemotesGetPveRemotesByRemoteNodesByNodeStorageByStorageStatusResponse
 func NewPveRemotesGetPveRemotesByRemoteNodesByNodeStorageByStorageStatusResponseDataWithDefaults() *PveRemotesGetPveRemotesByRemoteNodesByNodeStorageByStorageStatusResponseData {
 	this := PveRemotesGetPveRemotesByRemoteNodesByNodeStorageByStorageStatusResponseData{}
 
-	var active bool = 0
+	var active bool = false
 	this.Active = &active
 
 
 
-	var enabled bool = 0
+	var enabled bool = false
 	this.Enabled = &enabled
 
-	var shared bool = 0
+	var shared bool = false
 	this.Shared = &shared
 
 

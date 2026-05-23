@@ -49,7 +49,7 @@ type _PveRemotesGetOptionsResponseData PveRemotesGetOptionsResponseData
 // will change when the set of required properties is changed
 func NewPveRemotesGetOptionsResponseData() *PveRemotesGetOptionsResponseData {
 	this := PveRemotesGetOptionsResponseData{}
-	var ebtables bool = 1
+	var ebtables bool = true
 	this.Ebtables = &ebtables
 	var enable int64 = 0
 	this.Enable = &enable
@@ -64,7 +64,7 @@ func NewPveRemotesGetOptionsResponseData() *PveRemotesGetOptionsResponseData {
 func NewPveRemotesGetOptionsResponseDataWithDefaults() *PveRemotesGetOptionsResponseData {
 	this := PveRemotesGetOptionsResponseData{}
 
-	var ebtables bool = 1
+	var ebtables bool = true
 	this.Ebtables = &ebtables
 
 	var enable int64 = 0

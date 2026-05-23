@@ -53,10 +53,10 @@ type _AccessAclUpdateAclRequest AccessAclUpdateAclRequest
 // will change when the set of required properties is changed
 func NewAccessAclUpdateAclRequest(path string, role string) *AccessAclUpdateAclRequest {
 	this := AccessAclUpdateAclRequest{}
-	var delete bool = 0
+	var delete bool = false
 	this.Delete = &delete
 	this.Path = path
-	var propagate bool = 1
+	var propagate bool = true
 	this.Propagate = &propagate
 	this.Role = role
 	return &this
@@ -69,13 +69,13 @@ func NewAccessAclUpdateAclRequestWithDefaults() *AccessAclUpdateAclRequest {
 	this := AccessAclUpdateAclRequest{}
 
 
-	var delete bool = 0
+	var delete bool = false
 	this.Delete = &delete
 
 
 
 
-	var propagate bool = 1
+	var propagate bool = true
 	this.Propagate = &propagate
 
 

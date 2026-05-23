@@ -102,7 +102,7 @@ type _PveRemotesGetLxcResponseDataInner PveRemotesGetLxcResponseDataInner
 func NewPveRemotesGetLxcResponseDataInner(status PdmPbsRemotesStatusEnum, vmid int32) *PveRemotesGetLxcResponseDataInner {
 	this := PveRemotesGetLxcResponseDataInner{}
 	this.Status = status
-	var template bool = 0
+	var template bool = false
 	this.Template = &template
 	this.Vmid = vmid
 	return &this
@@ -134,7 +134,7 @@ func NewPveRemotesGetLxcResponseDataInnerWithDefaults() *PveRemotesGetLxcRespons
 
 
 
-	var template bool = 0
+	var template bool = false
 	this.Template = &template
 
 

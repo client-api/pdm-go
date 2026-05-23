@@ -39,7 +39,7 @@ type _PveRemotesGetPveRemotesByRemoteNodesByNodeStatusResponseDataBootInfo PveRe
 func NewPveRemotesGetPveRemotesByRemoteNodesByNodeStatusResponseDataBootInfo(mode PdmNodesStatusModeEnum) *PveRemotesGetPveRemotesByRemoteNodesByNodeStatusResponseDataBootInfo {
 	this := PveRemotesGetPveRemotesByRemoteNodesByNodeStatusResponseDataBootInfo{}
 	this.Mode = mode
-	var secureboot bool = 0
+	var secureboot bool = false
 	this.Secureboot = &secureboot
 	return &this
 }
@@ -51,7 +51,7 @@ func NewPveRemotesGetPveRemotesByRemoteNodesByNodeStatusResponseDataBootInfoWith
 	this := PveRemotesGetPveRemotesByRemoteNodesByNodeStatusResponseDataBootInfo{}
 
 
-	var secureboot bool = 0
+	var secureboot bool = false
 	this.Secureboot = &secureboot
 
 	return &this

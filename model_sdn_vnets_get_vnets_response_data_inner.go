@@ -64,11 +64,11 @@ type _SdnVnetsGetVnetsResponseDataInner SdnVnetsGetVnetsResponseDataInner
 // will change when the set of required properties is changed
 func NewSdnVnetsGetVnetsResponseDataInner(remote string, type_ PdmSdnVnetsTypeEnum, vnet string) *SdnVnetsGetVnetsResponseDataInner {
 	this := SdnVnetsGetVnetsResponseDataInner{}
-	var isolatePorts bool = 0
+	var isolatePorts bool = false
 	this.IsolatePorts = &isolatePorts
 	this.Remote = remote
 	this.Type = type_
-	var vlanaware bool = 0
+	var vlanaware bool = false
 	this.Vlanaware = &vlanaware
 	this.Vnet = vnet
 	return &this
@@ -82,7 +82,7 @@ func NewSdnVnetsGetVnetsResponseDataInnerWithDefaults() *SdnVnetsGetVnetsRespons
 
 
 
-	var isolatePorts bool = 0
+	var isolatePorts bool = false
 	this.IsolatePorts = &isolatePorts
 
 
@@ -90,7 +90,7 @@ func NewSdnVnetsGetVnetsResponseDataInnerWithDefaults() *SdnVnetsGetVnetsRespons
 
 
 
-	var vlanaware bool = 0
+	var vlanaware bool = false
 	this.Vlanaware = &vlanaware
 
 

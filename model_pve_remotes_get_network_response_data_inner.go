@@ -176,21 +176,21 @@ type _PveRemotesGetNetworkResponseDataInner PveRemotesGetNetworkResponseDataInne
 // will change when the set of required properties is changed
 func NewPveRemotesGetNetworkResponseDataInner(iface string, type_ PdmPveRemotesTypeEnum2) *PveRemotesGetNetworkResponseDataInner {
 	this := PveRemotesGetNetworkResponseDataInner{}
-	var active bool = 0
+	var active bool = false
 	this.Active = &active
-	var autostart bool = 0
+	var autostart bool = false
 	this.Autostart = &autostart
-	var bridgeArpNdSuppress bool = 0
+	var bridgeArpNdSuppress bool = false
 	this.BridgeArpNdSuppress = &bridgeArpNdSuppress
-	var bridgeLearning bool = 0
+	var bridgeLearning bool = false
 	this.BridgeLearning = &bridgeLearning
-	var bridgeMulticastFlood bool = 0
+	var bridgeMulticastFlood bool = false
 	this.BridgeMulticastFlood = &bridgeMulticastFlood
-	var bridgeUnicastFlood bool = 0
+	var bridgeUnicastFlood bool = false
 	this.BridgeUnicastFlood = &bridgeUnicastFlood
-	var bridgeVlanAware bool = 0
+	var bridgeVlanAware bool = false
 	this.BridgeVlanAware = &bridgeVlanAware
-	var exists bool = 0
+	var exists bool = false
 	this.Exists = &exists
 	this.Iface = iface
 	this.Type = type_
@@ -203,40 +203,40 @@ func NewPveRemotesGetNetworkResponseDataInner(iface string, type_ PdmPveRemotesT
 func NewPveRemotesGetNetworkResponseDataInnerWithDefaults() *PveRemotesGetNetworkResponseDataInner {
 	this := PveRemotesGetNetworkResponseDataInner{}
 
-	var active bool = 0
+	var active bool = false
 	this.Active = &active
 
 
 
-	var autostart bool = 0
+	var autostart bool = false
 	this.Autostart = &autostart
 
 
 
 
 
-	var bridgeArpNdSuppress bool = 0
+	var bridgeArpNdSuppress bool = false
 	this.BridgeArpNdSuppress = &bridgeArpNdSuppress
 
-	var bridgeLearning bool = 0
+	var bridgeLearning bool = false
 	this.BridgeLearning = &bridgeLearning
 
-	var bridgeMulticastFlood bool = 0
+	var bridgeMulticastFlood bool = false
 	this.BridgeMulticastFlood = &bridgeMulticastFlood
 
-	var bridgeUnicastFlood bool = 0
+	var bridgeUnicastFlood bool = false
 	this.BridgeUnicastFlood = &bridgeUnicastFlood
 
 
 
-	var bridgeVlanAware bool = 0
+	var bridgeVlanAware bool = false
 	this.BridgeVlanAware = &bridgeVlanAware
 
 
 
 
 
-	var exists bool = 0
+	var exists bool = false
 	this.Exists = &exists
 
 

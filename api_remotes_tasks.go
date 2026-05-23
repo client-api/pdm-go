@@ -150,7 +150,7 @@ func (a *RemotesTasksAPIService) RemotesTasksGetListExecute(r ApiRemotesTasksGet
 	if r.errors != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "errors", r.errors, "form", "")
 	} else {
-		var defaultValue bool = 0
+		var defaultValue bool = false
 		parameterAddToHeaderOrQuery(localVarQueryParams, "errors", defaultValue, "form", "")
 		r.errors = &defaultValue
 	}
@@ -167,7 +167,7 @@ func (a *RemotesTasksAPIService) RemotesTasksGetListExecute(r ApiRemotesTasksGet
 	if r.running != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "running", r.running, "form", "")
 	} else {
-		var defaultValue bool = 0
+		var defaultValue bool = false
 		parameterAddToHeaderOrQuery(localVarQueryParams, "running", defaultValue, "form", "")
 		r.running = &defaultValue
 	}
@@ -489,7 +489,7 @@ func (a *RemotesTasksAPIService) RemotesTasksGetStatisticsExecute(r ApiRemotesTa
 	if r.errors != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "errors", r.errors, "form", "")
 	} else {
-		var defaultValue bool = 0
+		var defaultValue bool = false
 		parameterAddToHeaderOrQuery(localVarQueryParams, "errors", defaultValue, "form", "")
 		r.errors = &defaultValue
 	}
@@ -506,7 +506,7 @@ func (a *RemotesTasksAPIService) RemotesTasksGetStatisticsExecute(r ApiRemotesTa
 	if r.running != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "running", r.running, "form", "")
 	} else {
-		var defaultValue bool = 0
+		var defaultValue bool = false
 		parameterAddToHeaderOrQuery(localVarQueryParams, "running", defaultValue, "form", "")
 		r.running = &defaultValue
 	}

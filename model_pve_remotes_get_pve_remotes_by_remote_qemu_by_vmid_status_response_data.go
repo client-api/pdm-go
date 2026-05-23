@@ -128,15 +128,15 @@ type _PveRemotesGetPveRemotesByRemoteQemuByVmidStatusResponseData PveRemotesGetP
 // will change when the set of required properties is changed
 func NewPveRemotesGetPveRemotesByRemoteQemuByVmidStatusResponseData(ha map[string]interface{}, status PdmPbsRemotesStatusEnum, vmid int32) *PveRemotesGetPveRemotesByRemoteQemuByVmidStatusResponseData {
 	this := PveRemotesGetPveRemotesByRemoteQemuByVmidStatusResponseData{}
-	var agent bool = 0
+	var agent bool = false
 	this.Agent = &agent
 	this.Ha = ha
-	var serial bool = 0
+	var serial bool = false
 	this.Serial = &serial
-	var spice bool = 0
+	var spice bool = false
 	this.Spice = &spice
 	this.Status = status
-	var template bool = 0
+	var template bool = false
 	this.Template = &template
 	this.Vmid = vmid
 	return &this
@@ -148,7 +148,7 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidStatusResponseData(ha map[strin
 func NewPveRemotesGetPveRemotesByRemoteQemuByVmidStatusResponseDataWithDefaults() *PveRemotesGetPveRemotesByRemoteQemuByVmidStatusResponseData {
 	this := PveRemotesGetPveRemotesByRemoteQemuByVmidStatusResponseData{}
 
-	var agent bool = 0
+	var agent bool = false
 	this.Agent = &agent
 
 
@@ -175,15 +175,15 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidStatusResponseDataWithDefaults(
 
 
 
-	var serial bool = 0
+	var serial bool = false
 	this.Serial = &serial
 
-	var spice bool = 0
+	var spice bool = false
 	this.Spice = &spice
 
 
 
-	var template bool = 0
+	var template bool = false
 	this.Template = &template
 
 

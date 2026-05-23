@@ -79,10 +79,10 @@ type _SdnGetControllersResponseDataInner SdnGetControllersResponseDataInner
 // will change when the set of required properties is changed
 func NewSdnGetControllersResponseDataInner(controller string, remote string, type_ PdmTyEnum) *SdnGetControllersResponseDataInner {
 	this := SdnGetControllersResponseDataInner{}
-	var bgpMultipathAsRelax bool = 0
+	var bgpMultipathAsRelax bool = false
 	this.BgpMultipathAsRelax = &bgpMultipathAsRelax
 	this.Controller = controller
-	var ebgp bool = 0
+	var ebgp bool = false
 	this.Ebgp = &ebgp
 	this.Remote = remote
 	this.Type = type_
@@ -96,12 +96,12 @@ func NewSdnGetControllersResponseDataInnerWithDefaults() *SdnGetControllersRespo
 	this := SdnGetControllersResponseDataInner{}
 
 
-	var bgpMultipathAsRelax bool = 0
+	var bgpMultipathAsRelax bool = false
 	this.BgpMultipathAsRelax = &bgpMultipathAsRelax
 
 
 
-	var ebgp bool = 0
+	var ebgp bool = false
 	this.Ebgp = &ebgp
 
 

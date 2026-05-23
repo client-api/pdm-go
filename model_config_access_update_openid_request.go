@@ -61,7 +61,7 @@ type ConfigAccessUpdateOpenidRequest struct {
 // will change when the set of required properties is changed
 func NewConfigAccessUpdateOpenidRequest() *ConfigAccessUpdateOpenidRequest {
 	this := ConfigAccessUpdateOpenidRequest{}
-	var autocreate bool = 0
+	var autocreate bool = false
 	this.Autocreate = &autocreate
 	return &this
 }
@@ -73,7 +73,7 @@ func NewConfigAccessUpdateOpenidRequestWithDefaults() *ConfigAccessUpdateOpenidR
 	this := ConfigAccessUpdateOpenidRequest{}
 
 
-	var autocreate bool = 0
+	var autocreate bool = false
 	this.Autocreate = &autocreate
 
 

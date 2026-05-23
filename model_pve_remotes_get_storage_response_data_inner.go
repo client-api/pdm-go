@@ -67,14 +67,14 @@ type _PveRemotesGetStorageResponseDataInner PveRemotesGetStorageResponseDataInne
 // will change when the set of required properties is changed
 func NewPveRemotesGetStorageResponseDataInner(content PdmContentField, storage string, type_ string) *PveRemotesGetStorageResponseDataInner {
 	this := PveRemotesGetStorageResponseDataInner{}
-	var active bool = 0
+	var active bool = false
 	this.Active = &active
 	this.Content = content
-	var enabled bool = 0
+	var enabled bool = false
 	this.Enabled = &enabled
-	var selectExisting bool = 0
+	var selectExisting bool = false
 	this.SelectExisting = &selectExisting
-	var shared bool = 0
+	var shared bool = false
 	this.Shared = &shared
 	this.Storage = storage
 	this.Type = type_
@@ -87,19 +87,19 @@ func NewPveRemotesGetStorageResponseDataInner(content PdmContentField, storage s
 func NewPveRemotesGetStorageResponseDataInnerWithDefaults() *PveRemotesGetStorageResponseDataInner {
 	this := PveRemotesGetStorageResponseDataInner{}
 
-	var active bool = 0
+	var active bool = false
 	this.Active = &active
 
 
 
-	var enabled bool = 0
+	var enabled bool = false
 	this.Enabled = &enabled
 
 
-	var selectExisting bool = 0
+	var selectExisting bool = false
 	this.SelectExisting = &selectExisting
 
-	var shared bool = 0
+	var shared bool = false
 	this.Shared = &shared
 
 

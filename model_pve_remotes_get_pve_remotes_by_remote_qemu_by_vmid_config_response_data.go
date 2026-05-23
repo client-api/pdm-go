@@ -1556,15 +1556,15 @@ type _PveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseData PveRemotesGetP
 // will change when the set of required properties is changed
 func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseData(digest string, hostpci0 PdmHostpciField, hostpci1 PdmHostpciField, hostpci10 PdmHostpciField, hostpci11 PdmHostpciField, hostpci12 PdmHostpciField, hostpci13 PdmHostpciField, hostpci14 PdmHostpciField, hostpci15 PdmHostpciField, hostpci2 PdmHostpciField, hostpci3 PdmHostpciField, hostpci4 PdmHostpciField, hostpci5 PdmHostpciField, hostpci6 PdmHostpciField, hostpci7 PdmHostpciField, hostpci8 PdmHostpciField, hostpci9 PdmHostpciField, ide0 PdmCdromField, ide1 PdmCdromField, ide2 PdmCdromField, ide3 PdmCdromField, ipconfig0 PdmIpconfigField, ipconfig1 PdmIpconfigField, ipconfig10 PdmIpconfigField, ipconfig11 PdmIpconfigField, ipconfig12 PdmIpconfigField, ipconfig13 PdmIpconfigField, ipconfig14 PdmIpconfigField, ipconfig15 PdmIpconfigField, ipconfig16 PdmIpconfigField, ipconfig17 PdmIpconfigField, ipconfig18 PdmIpconfigField, ipconfig19 PdmIpconfigField, ipconfig2 PdmIpconfigField, ipconfig20 PdmIpconfigField, ipconfig21 PdmIpconfigField, ipconfig22 PdmIpconfigField, ipconfig23 PdmIpconfigField, ipconfig24 PdmIpconfigField, ipconfig25 PdmIpconfigField, ipconfig26 PdmIpconfigField, ipconfig27 PdmIpconfigField, ipconfig28 PdmIpconfigField, ipconfig29 PdmIpconfigField, ipconfig3 PdmIpconfigField, ipconfig30 PdmIpconfigField, ipconfig31 PdmIpconfigField, ipconfig4 PdmIpconfigField, ipconfig5 PdmIpconfigField, ipconfig6 PdmIpconfigField, ipconfig7 PdmIpconfigField, ipconfig8 PdmIpconfigField, ipconfig9 PdmIpconfigField, net0 PdmPveRemotesNetField, net1 PdmPveRemotesNetField, net10 PdmPveRemotesNetField, net11 PdmPveRemotesNetField, net12 PdmPveRemotesNetField, net13 PdmPveRemotesNetField, net14 PdmPveRemotesNetField, net15 PdmPveRemotesNetField, net16 PdmPveRemotesNetField, net17 PdmPveRemotesNetField, net18 PdmPveRemotesNetField, net19 PdmPveRemotesNetField, net2 PdmPveRemotesNetField, net20 PdmPveRemotesNetField, net21 PdmPveRemotesNetField, net22 PdmPveRemotesNetField, net23 PdmPveRemotesNetField, net24 PdmPveRemotesNetField, net25 PdmPveRemotesNetField, net26 PdmPveRemotesNetField, net27 PdmPveRemotesNetField, net28 PdmPveRemotesNetField, net29 PdmPveRemotesNetField, net3 PdmPveRemotesNetField, net30 PdmPveRemotesNetField, net31 PdmPveRemotesNetField, net4 PdmPveRemotesNetField, net5 PdmPveRemotesNetField, net6 PdmPveRemotesNetField, net7 PdmPveRemotesNetField, net8 PdmPveRemotesNetField, net9 PdmPveRemotesNetField, numaArray0 PdmNumaArrayField, numaArray1 PdmNumaArrayField, numaArray2 PdmNumaArrayField, numaArray3 PdmNumaArrayField, numaArray4 PdmNumaArrayField, numaArray5 PdmNumaArrayField, numaArray6 PdmNumaArrayField, numaArray7 PdmNumaArrayField, parallel0 string, parallel1 string, parallel2 string, sata0 PdmSataField, sata1 PdmSataField, sata2 PdmSataField, sata3 PdmSataField, sata4 PdmSataField, sata5 PdmSataField, scsi0 PdmScsiField, scsi1 PdmScsiField, scsi10 PdmScsiField, scsi11 PdmScsiField, scsi12 PdmScsiField, scsi13 PdmScsiField, scsi14 PdmScsiField, scsi15 PdmScsiField, scsi16 PdmScsiField, scsi17 PdmScsiField, scsi18 PdmScsiField, scsi19 PdmScsiField, scsi2 PdmScsiField, scsi20 PdmScsiField, scsi21 PdmScsiField, scsi22 PdmScsiField, scsi23 PdmScsiField, scsi24 PdmScsiField, scsi25 PdmScsiField, scsi26 PdmScsiField, scsi27 PdmScsiField, scsi28 PdmScsiField, scsi29 PdmScsiField, scsi3 PdmScsiField, scsi30 PdmScsiField, scsi4 PdmScsiField, scsi5 PdmScsiField, scsi6 PdmScsiField, scsi7 PdmScsiField, scsi8 PdmScsiField, scsi9 PdmScsiField, serial0 string, serial1 string, serial2 string, serial3 string, unused0 PdmPveRemotesUnusedField, unused1 PdmPveRemotesUnusedField, unused10 PdmPveRemotesUnusedField, unused100 PdmPveRemotesUnusedField, unused101 PdmPveRemotesUnusedField, unused102 PdmPveRemotesUnusedField, unused103 PdmPveRemotesUnusedField, unused104 PdmPveRemotesUnusedField, unused105 PdmPveRemotesUnusedField, unused106 PdmPveRemotesUnusedField, unused107 PdmPveRemotesUnusedField, unused108 PdmPveRemotesUnusedField, unused109 PdmPveRemotesUnusedField, unused11 PdmPveRemotesUnusedField, unused110 PdmPveRemotesUnusedField, unused111 PdmPveRemotesUnusedField, unused112 PdmPveRemotesUnusedField, unused113 PdmPveRemotesUnusedField, unused114 PdmPveRemotesUnusedField, unused115 PdmPveRemotesUnusedField, unused116 PdmPveRemotesUnusedField, unused117 PdmPveRemotesUnusedField, unused118 PdmPveRemotesUnusedField, unused119 PdmPveRemotesUnusedField, unused12 PdmPveRemotesUnusedField, unused120 PdmPveRemotesUnusedField, unused121 PdmPveRemotesUnusedField, unused122 PdmPveRemotesUnusedField, unused123 PdmPveRemotesUnusedField, unused124 PdmPveRemotesUnusedField, unused125 PdmPveRemotesUnusedField, unused126 PdmPveRemotesUnusedField, unused127 PdmPveRemotesUnusedField, unused128 PdmPveRemotesUnusedField, unused129 PdmPveRemotesUnusedField, unused13 PdmPveRemotesUnusedField, unused130 PdmPveRemotesUnusedField, unused131 PdmPveRemotesUnusedField, unused132 PdmPveRemotesUnusedField, unused133 PdmPveRemotesUnusedField, unused134 PdmPveRemotesUnusedField, unused135 PdmPveRemotesUnusedField, unused136 PdmPveRemotesUnusedField, unused137 PdmPveRemotesUnusedField, unused138 PdmPveRemotesUnusedField, unused139 PdmPveRemotesUnusedField, unused14 PdmPveRemotesUnusedField, unused140 PdmPveRemotesUnusedField, unused141 PdmPveRemotesUnusedField, unused142 PdmPveRemotesUnusedField, unused143 PdmPveRemotesUnusedField, unused144 PdmPveRemotesUnusedField, unused145 PdmPveRemotesUnusedField, unused146 PdmPveRemotesUnusedField, unused147 PdmPveRemotesUnusedField, unused148 PdmPveRemotesUnusedField, unused149 PdmPveRemotesUnusedField, unused15 PdmPveRemotesUnusedField, unused150 PdmPveRemotesUnusedField, unused151 PdmPveRemotesUnusedField, unused152 PdmPveRemotesUnusedField, unused153 PdmPveRemotesUnusedField, unused154 PdmPveRemotesUnusedField, unused155 PdmPveRemotesUnusedField, unused156 PdmPveRemotesUnusedField, unused157 PdmPveRemotesUnusedField, unused158 PdmPveRemotesUnusedField, unused159 PdmPveRemotesUnusedField, unused16 PdmPveRemotesUnusedField, unused160 PdmPveRemotesUnusedField, unused161 PdmPveRemotesUnusedField, unused162 PdmPveRemotesUnusedField, unused163 PdmPveRemotesUnusedField, unused164 PdmPveRemotesUnusedField, unused165 PdmPveRemotesUnusedField, unused166 PdmPveRemotesUnusedField, unused167 PdmPveRemotesUnusedField, unused168 PdmPveRemotesUnusedField, unused169 PdmPveRemotesUnusedField, unused17 PdmPveRemotesUnusedField, unused170 PdmPveRemotesUnusedField, unused171 PdmPveRemotesUnusedField, unused172 PdmPveRemotesUnusedField, unused173 PdmPveRemotesUnusedField, unused174 PdmPveRemotesUnusedField, unused175 PdmPveRemotesUnusedField, unused176 PdmPveRemotesUnusedField, unused177 PdmPveRemotesUnusedField, unused178 PdmPveRemotesUnusedField, unused179 PdmPveRemotesUnusedField, unused18 PdmPveRemotesUnusedField, unused180 PdmPveRemotesUnusedField, unused181 PdmPveRemotesUnusedField, unused182 PdmPveRemotesUnusedField, unused183 PdmPveRemotesUnusedField, unused184 PdmPveRemotesUnusedField, unused185 PdmPveRemotesUnusedField, unused186 PdmPveRemotesUnusedField, unused187 PdmPveRemotesUnusedField, unused188 PdmPveRemotesUnusedField, unused189 PdmPveRemotesUnusedField, unused19 PdmPveRemotesUnusedField, unused190 PdmPveRemotesUnusedField, unused191 PdmPveRemotesUnusedField, unused192 PdmPveRemotesUnusedField, unused193 PdmPveRemotesUnusedField, unused194 PdmPveRemotesUnusedField, unused195 PdmPveRemotesUnusedField, unused196 PdmPveRemotesUnusedField, unused197 PdmPveRemotesUnusedField, unused198 PdmPveRemotesUnusedField, unused199 PdmPveRemotesUnusedField, unused2 PdmPveRemotesUnusedField, unused20 PdmPveRemotesUnusedField, unused200 PdmPveRemotesUnusedField, unused201 PdmPveRemotesUnusedField, unused202 PdmPveRemotesUnusedField, unused203 PdmPveRemotesUnusedField, unused204 PdmPveRemotesUnusedField, unused205 PdmPveRemotesUnusedField, unused206 PdmPveRemotesUnusedField, unused207 PdmPveRemotesUnusedField, unused208 PdmPveRemotesUnusedField, unused209 PdmPveRemotesUnusedField, unused21 PdmPveRemotesUnusedField, unused210 PdmPveRemotesUnusedField, unused211 PdmPveRemotesUnusedField, unused212 PdmPveRemotesUnusedField, unused213 PdmPveRemotesUnusedField, unused214 PdmPveRemotesUnusedField, unused215 PdmPveRemotesUnusedField, unused216 PdmPveRemotesUnusedField, unused217 PdmPveRemotesUnusedField, unused218 PdmPveRemotesUnusedField, unused219 PdmPveRemotesUnusedField, unused22 PdmPveRemotesUnusedField, unused220 PdmPveRemotesUnusedField, unused221 PdmPveRemotesUnusedField, unused222 PdmPveRemotesUnusedField, unused223 PdmPveRemotesUnusedField, unused224 PdmPveRemotesUnusedField, unused225 PdmPveRemotesUnusedField, unused226 PdmPveRemotesUnusedField, unused227 PdmPveRemotesUnusedField, unused228 PdmPveRemotesUnusedField, unused229 PdmPveRemotesUnusedField, unused23 PdmPveRemotesUnusedField, unused230 PdmPveRemotesUnusedField, unused231 PdmPveRemotesUnusedField, unused232 PdmPveRemotesUnusedField, unused233 PdmPveRemotesUnusedField, unused234 PdmPveRemotesUnusedField, unused235 PdmPveRemotesUnusedField, unused236 PdmPveRemotesUnusedField, unused237 PdmPveRemotesUnusedField, unused238 PdmPveRemotesUnusedField, unused239 PdmPveRemotesUnusedField, unused24 PdmPveRemotesUnusedField, unused240 PdmPveRemotesUnusedField, unused241 PdmPveRemotesUnusedField, unused242 PdmPveRemotesUnusedField, unused243 PdmPveRemotesUnusedField, unused244 PdmPveRemotesUnusedField, unused245 PdmPveRemotesUnusedField, unused246 PdmPveRemotesUnusedField, unused247 PdmPveRemotesUnusedField, unused248 PdmPveRemotesUnusedField, unused249 PdmPveRemotesUnusedField, unused25 PdmPveRemotesUnusedField, unused250 PdmPveRemotesUnusedField, unused251 PdmPveRemotesUnusedField, unused252 PdmPveRemotesUnusedField, unused253 PdmPveRemotesUnusedField, unused254 PdmPveRemotesUnusedField, unused255 PdmPveRemotesUnusedField, unused26 PdmPveRemotesUnusedField, unused27 PdmPveRemotesUnusedField, unused28 PdmPveRemotesUnusedField, unused29 PdmPveRemotesUnusedField, unused3 PdmPveRemotesUnusedField, unused30 PdmPveRemotesUnusedField, unused31 PdmPveRemotesUnusedField, unused32 PdmPveRemotesUnusedField, unused33 PdmPveRemotesUnusedField, unused34 PdmPveRemotesUnusedField, unused35 PdmPveRemotesUnusedField, unused36 PdmPveRemotesUnusedField, unused37 PdmPveRemotesUnusedField, unused38 PdmPveRemotesUnusedField, unused39 PdmPveRemotesUnusedField, unused4 PdmPveRemotesUnusedField, unused40 PdmPveRemotesUnusedField, unused41 PdmPveRemotesUnusedField, unused42 PdmPveRemotesUnusedField, unused43 PdmPveRemotesUnusedField, unused44 PdmPveRemotesUnusedField, unused45 PdmPveRemotesUnusedField, unused46 PdmPveRemotesUnusedField, unused47 PdmPveRemotesUnusedField, unused48 PdmPveRemotesUnusedField, unused49 PdmPveRemotesUnusedField, unused5 PdmPveRemotesUnusedField, unused50 PdmPveRemotesUnusedField, unused51 PdmPveRemotesUnusedField, unused52 PdmPveRemotesUnusedField, unused53 PdmPveRemotesUnusedField, unused54 PdmPveRemotesUnusedField, unused55 PdmPveRemotesUnusedField, unused56 PdmPveRemotesUnusedField, unused57 PdmPveRemotesUnusedField, unused58 PdmPveRemotesUnusedField, unused59 PdmPveRemotesUnusedField, unused6 PdmPveRemotesUnusedField, unused60 PdmPveRemotesUnusedField, unused61 PdmPveRemotesUnusedField, unused62 PdmPveRemotesUnusedField, unused63 PdmPveRemotesUnusedField, unused64 PdmPveRemotesUnusedField, unused65 PdmPveRemotesUnusedField, unused66 PdmPveRemotesUnusedField, unused67 PdmPveRemotesUnusedField, unused68 PdmPveRemotesUnusedField, unused69 PdmPveRemotesUnusedField, unused7 PdmPveRemotesUnusedField, unused70 PdmPveRemotesUnusedField, unused71 PdmPveRemotesUnusedField, unused72 PdmPveRemotesUnusedField, unused73 PdmPveRemotesUnusedField, unused74 PdmPveRemotesUnusedField, unused75 PdmPveRemotesUnusedField, unused76 PdmPveRemotesUnusedField, unused77 PdmPveRemotesUnusedField, unused78 PdmPveRemotesUnusedField, unused79 PdmPveRemotesUnusedField, unused8 PdmPveRemotesUnusedField, unused80 PdmPveRemotesUnusedField, unused81 PdmPveRemotesUnusedField, unused82 PdmPveRemotesUnusedField, unused83 PdmPveRemotesUnusedField, unused84 PdmPveRemotesUnusedField, unused85 PdmPveRemotesUnusedField, unused86 PdmPveRemotesUnusedField, unused87 PdmPveRemotesUnusedField, unused88 PdmPveRemotesUnusedField, unused89 PdmPveRemotesUnusedField, unused9 PdmPveRemotesUnusedField, unused90 PdmPveRemotesUnusedField, unused91 PdmPveRemotesUnusedField, unused92 PdmPveRemotesUnusedField, unused93 PdmPveRemotesUnusedField, unused94 PdmPveRemotesUnusedField, unused95 PdmPveRemotesUnusedField, unused96 PdmPveRemotesUnusedField, unused97 PdmPveRemotesUnusedField, unused98 PdmPveRemotesUnusedField, unused99 PdmPveRemotesUnusedField, usb0 PdmUsbField, usb1 PdmUsbField, usb10 PdmUsbField, usb11 PdmUsbField, usb12 PdmUsbField, usb13 PdmUsbField, usb2 PdmUsbField, usb3 PdmUsbField, usb4 PdmUsbField, usb5 PdmUsbField, usb6 PdmUsbField, usb7 PdmUsbField, usb8 PdmUsbField, usb9 PdmUsbField, virtio0 PdmVirtioField, virtio1 PdmVirtioField, virtio10 PdmVirtioField, virtio11 PdmVirtioField, virtio12 PdmVirtioField, virtio13 PdmVirtioField, virtio14 PdmVirtioField, virtio15 PdmVirtioField, virtio2 PdmVirtioField, virtio3 PdmVirtioField, virtio4 PdmVirtioField, virtio5 PdmVirtioField, virtio6 PdmVirtioField, virtio7 PdmVirtioField, virtio8 PdmVirtioField, virtio9 PdmVirtioField, virtiofs0 PdmVirtiofsField, virtiofs1 PdmVirtiofsField, virtiofs2 PdmVirtiofsField, virtiofs3 PdmVirtiofsField, virtiofs4 PdmVirtiofsField, virtiofs5 PdmVirtiofsField, virtiofs6 PdmVirtiofsField, virtiofs7 PdmVirtiofsField, virtiofs8 PdmVirtiofsField, virtiofs9 PdmVirtiofsField) *PveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseData {
 	this := PveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseData{}
-	var acpi bool = 1
+	var acpi bool = true
 	this.Acpi = &acpi
-	var allowKsm bool = 1
+	var allowKsm bool = true
 	this.AllowKsm = &allowKsm
-	var autostart bool = 0
+	var autostart bool = false
 	this.Autostart = &autostart
 	var bios PdmPveRemotesBiosEnum = PDMPVEREMOTESBIOSENUM_SEABIOS
 	this.Bios = &bios
-	var ciupgrade bool = 1
+	var ciupgrade bool = true
 	this.Ciupgrade = &ciupgrade
 	var cores int64 = 1
 	this.Cores = &cores
@@ -1573,7 +1573,7 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseData(digest strin
 	var cpuunits int32 = 1024
 	this.Cpuunits = &cpuunits
 	this.Digest = digest
-	var freeze bool = 0
+	var freeze bool = false
 	this.Freeze = &freeze
 	this.Hostpci0 = hostpci0
 	this.Hostpci1 = hostpci1
@@ -1629,11 +1629,11 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseData(digest strin
 	this.Ipconfig7 = ipconfig7
 	this.Ipconfig8 = ipconfig8
 	this.Ipconfig9 = ipconfig9
-	var keephugepages bool = 0
+	var keephugepages bool = false
 	this.Keephugepages = &keephugepages
-	var kvm bool = 1
+	var kvm bool = true
 	this.Kvm = &kvm
-	var localtime bool = 0
+	var localtime bool = false
 	this.Localtime = &localtime
 	var migrateDowntime float32 = 0.1
 	this.MigrateDowntime = &migrateDowntime
@@ -1671,7 +1671,7 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseData(digest strin
 	this.Net7 = net7
 	this.Net8 = net8
 	this.Net9 = net9
-	var numa bool = 0
+	var numa bool = false
 	this.Numa = &numa
 	this.NumaArray0 = numaArray0
 	this.NumaArray1 = numaArray1
@@ -1681,16 +1681,16 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseData(digest strin
 	this.NumaArray5 = numaArray5
 	this.NumaArray6 = numaArray6
 	this.NumaArray7 = numaArray7
-	var onboot bool = 0
+	var onboot bool = false
 	this.Onboot = &onboot
 	var ostype PdmPveRemotesOstypeEnum2 = PDMPVEREMOTESOSTYPEENUM2_OTHER
 	this.Ostype = &ostype
 	this.Parallel0 = parallel0
 	this.Parallel1 = parallel1
 	this.Parallel2 = parallel2
-	var protection bool = 0
+	var protection bool = false
 	this.Protection = &protection
-	var reboot bool = 1
+	var reboot bool = true
 	this.Reboot = &reboot
 	this.Sata0 = sata0
 	this.Sata1 = sata1
@@ -1743,11 +1743,11 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseData(digest strin
 	this.Sockets = &sockets
 	var startdate string = "now"
 	this.Startdate = &startdate
-	var tablet bool = 1
+	var tablet bool = true
 	this.Tablet = &tablet
-	var tdf bool = 0
+	var tdf bool = false
 	this.Tdf = &tdf
-	var template bool = 0
+	var template bool = false
 	this.Template = &template
 	this.Unused0 = unused0
 	this.Unused1 = unused1
@@ -2058,19 +2058,19 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseData(digest strin
 func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseDataWithDefaults() *PveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseData {
 	this := PveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseData{}
 
-	var acpi bool = 1
+	var acpi bool = true
 	this.Acpi = &acpi
 
 
 
-	var allowKsm bool = 1
+	var allowKsm bool = true
 	this.AllowKsm = &allowKsm
 
 
 
 
 
-	var autostart bool = 0
+	var autostart bool = false
 	this.Autostart = &autostart
 
 
@@ -2083,7 +2083,7 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseDataWithDefaults(
 
 
 
-	var ciupgrade bool = 1
+	var ciupgrade bool = true
 	this.Ciupgrade = &ciupgrade
 
 
@@ -2100,7 +2100,7 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseDataWithDefaults(
 
 
 
-	var freeze bool = 0
+	var freeze bool = false
 	this.Freeze = &freeze
 
 
@@ -2162,14 +2162,14 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseDataWithDefaults(
 
 
 
-	var keephugepages bool = 0
+	var keephugepages bool = false
 	this.Keephugepages = &keephugepages
 
 
-	var kvm bool = 1
+	var kvm bool = true
 	this.Kvm = &kvm
 
-	var localtime bool = 0
+	var localtime bool = false
 	this.Localtime = &localtime
 
 
@@ -2216,7 +2216,7 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseDataWithDefaults(
 
 
 
-	var numa bool = 0
+	var numa bool = false
 	this.Numa = &numa
 
 
@@ -2227,7 +2227,7 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseDataWithDefaults(
 
 
 
-	var onboot bool = 0
+	var onboot bool = false
 	this.Onboot = &onboot
 
 	var ostype PdmPveRemotesOstypeEnum2 = PDMPVEREMOTESOSTYPEENUM2_OTHER
@@ -2237,10 +2237,10 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseDataWithDefaults(
 
 
 
-	var protection bool = 0
+	var protection bool = false
 	this.Protection = &protection
 
-	var reboot bool = 1
+	var reboot bool = true
 	this.Reboot = &reboot
 
 
@@ -2309,14 +2309,14 @@ func NewPveRemotesGetPveRemotesByRemoteQemuByVmidConfigResponseDataWithDefaults(
 	this.Startdate = &startdate
 
 
-	var tablet bool = 1
+	var tablet bool = true
 	this.Tablet = &tablet
 
 
-	var tdf bool = 0
+	var tdf bool = false
 	this.Tdf = &tdf
 
-	var template bool = 0
+	var template bool = false
 	this.Template = &template
 
 

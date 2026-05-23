@@ -57,10 +57,10 @@ func NewPveRemotesGetMigrateResponseDataLocalDisksInner(cdrom bool, isUnused boo
 func NewPveRemotesGetMigrateResponseDataLocalDisksInnerWithDefaults() *PveRemotesGetMigrateResponseDataLocalDisksInner {
 	this := PveRemotesGetMigrateResponseDataLocalDisksInner{}
 
-	var cdrom bool = 0
+	var cdrom bool = false
 	this.Cdrom = cdrom
 
-	var isUnused bool = 0
+	var isUnused bool = false
 	this.IsUnused = isUnused
 
 

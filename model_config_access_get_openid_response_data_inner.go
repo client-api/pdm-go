@@ -65,7 +65,7 @@ type _ConfigAccessGetOpenidResponseDataInner ConfigAccessGetOpenidResponseDataIn
 // will change when the set of required properties is changed
 func NewConfigAccessGetOpenidResponseDataInner(clientId string, issuerUrl string, realm string) *ConfigAccessGetOpenidResponseDataInner {
 	this := ConfigAccessGetOpenidResponseDataInner{}
-	var autocreate bool = 0
+	var autocreate bool = false
 	this.Autocreate = &autocreate
 	this.ClientId = clientId
 	this.IssuerUrl = issuerUrl
@@ -80,7 +80,7 @@ func NewConfigAccessGetOpenidResponseDataInnerWithDefaults() *ConfigAccessGetOpe
 	this := ConfigAccessGetOpenidResponseDataInner{}
 
 
-	var autocreate bool = 0
+	var autocreate bool = false
 	this.Autocreate = &autocreate
 
 

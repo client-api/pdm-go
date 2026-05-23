@@ -97,13 +97,13 @@ type _SdnZonesGetZonesResponseDataInnerPending SdnZonesGetZonesResponseDataInner
 // will change when the set of required properties is changed
 func NewSdnZonesGetZonesResponseDataInnerPending() *SdnZonesGetZonesResponseDataInnerPending {
 	this := SdnZonesGetZonesResponseDataInnerPending{}
-	var advertiseSubnets bool = 0
+	var advertiseSubnets bool = false
 	this.AdvertiseSubnets = &advertiseSubnets
-	var bridgeDisableMacLearning bool = 0
+	var bridgeDisableMacLearning bool = false
 	this.BridgeDisableMacLearning = &bridgeDisableMacLearning
-	var disableArpNdSuppression bool = 0
+	var disableArpNdSuppression bool = false
 	this.DisableArpNdSuppression = &disableArpNdSuppression
-	var exitnodesLocalRouting bool = 0
+	var exitnodesLocalRouting bool = false
 	this.ExitnodesLocalRouting = &exitnodesLocalRouting
 	var vxlanPort int32 = 4789
 	this.VxlanPort = &vxlanPort
@@ -116,22 +116,22 @@ func NewSdnZonesGetZonesResponseDataInnerPending() *SdnZonesGetZonesResponseData
 func NewSdnZonesGetZonesResponseDataInnerPendingWithDefaults() *SdnZonesGetZonesResponseDataInnerPending {
 	this := SdnZonesGetZonesResponseDataInnerPending{}
 
-	var advertiseSubnets bool = 0
+	var advertiseSubnets bool = false
 	this.AdvertiseSubnets = &advertiseSubnets
 
 
-	var bridgeDisableMacLearning bool = 0
+	var bridgeDisableMacLearning bool = false
 	this.BridgeDisableMacLearning = &bridgeDisableMacLearning
 
 
 
-	var disableArpNdSuppression bool = 0
+	var disableArpNdSuppression bool = false
 	this.DisableArpNdSuppression = &disableArpNdSuppression
 
 
 
 
-	var exitnodesLocalRouting bool = 0
+	var exitnodesLocalRouting bool = false
 	this.ExitnodesLocalRouting = &exitnodesLocalRouting
 
 

@@ -88,7 +88,7 @@ type _PveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseData PveR
 // will change when the set of required properties is changed
 func NewPveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseData() *PveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseData {
 	this := PveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseData{}
-	var enable bool = 1
+	var enable bool = true
 	this.Enable = &enable
 	var logLevelForward PdmLogLevelInEnum = PDMLOGLEVELINENUM_NOLOG
 	this.LogLevelForward = &logLevelForward
@@ -96,11 +96,11 @@ func NewPveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseData() 
 	this.LogLevelIn = &logLevelIn
 	var logLevelOut PdmLogLevelInEnum = PDMLOGLEVELINENUM_NOLOG
 	this.LogLevelOut = &logLevelOut
-	var logNfConntrack bool = 0
+	var logNfConntrack bool = false
 	this.LogNfConntrack = &logNfConntrack
-	var ndp bool = 1
+	var ndp bool = true
 	this.Ndp = &ndp
-	var nfConntrackAllowInvalid bool = 0
+	var nfConntrackAllowInvalid bool = false
 	this.NfConntrackAllowInvalid = &nfConntrackAllowInvalid
 	var nfConntrackMax int64 = 262144
 	this.NfConntrackMax = &nfConntrackMax
@@ -108,11 +108,11 @@ func NewPveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseData() 
 	this.NfConntrackTcpTimeoutEstablished = &nfConntrackTcpTimeoutEstablished
 	var nfConntrackTcpTimeoutSynRecv int32 = 60
 	this.NfConntrackTcpTimeoutSynRecv = &nfConntrackTcpTimeoutSynRecv
-	var nftables bool = 0
+	var nftables bool = false
 	this.Nftables = &nftables
-	var nosmurfs bool = 0
+	var nosmurfs bool = false
 	this.Nosmurfs = &nosmurfs
-	var protectionSynflood bool = 0
+	var protectionSynflood bool = false
 	this.ProtectionSynflood = &protectionSynflood
 	var protectionSynfloodBurst int64 = 1000
 	this.ProtectionSynfloodBurst = &protectionSynfloodBurst
@@ -122,7 +122,7 @@ func NewPveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseData() 
 	this.SmurfLogLevel = &smurfLogLevel
 	var tcpFlagsLogLevel PdmLogLevelInEnum = PDMLOGLEVELINENUM_NOLOG
 	this.TcpFlagsLogLevel = &tcpFlagsLogLevel
-	var tcpflags bool = 0
+	var tcpflags bool = false
 	this.Tcpflags = &tcpflags
 	return &this
 }
@@ -133,7 +133,7 @@ func NewPveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseData() 
 func NewPveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseDataWithDefaults() *PveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseData {
 	this := PveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseData{}
 
-	var enable bool = 1
+	var enable bool = true
 	this.Enable = &enable
 
 	var logLevelForward PdmLogLevelInEnum = PDMLOGLEVELINENUM_NOLOG
@@ -145,13 +145,13 @@ func NewPveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseDataWit
 	var logLevelOut PdmLogLevelInEnum = PDMLOGLEVELINENUM_NOLOG
 	this.LogLevelOut = &logLevelOut
 
-	var logNfConntrack bool = 0
+	var logNfConntrack bool = false
 	this.LogNfConntrack = &logNfConntrack
 
-	var ndp bool = 1
+	var ndp bool = true
 	this.Ndp = &ndp
 
-	var nfConntrackAllowInvalid bool = 0
+	var nfConntrackAllowInvalid bool = false
 	this.NfConntrackAllowInvalid = &nfConntrackAllowInvalid
 
 
@@ -164,13 +164,13 @@ func NewPveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseDataWit
 	var nfConntrackTcpTimeoutSynRecv int32 = 60
 	this.NfConntrackTcpTimeoutSynRecv = &nfConntrackTcpTimeoutSynRecv
 
-	var nftables bool = 0
+	var nftables bool = false
 	this.Nftables = &nftables
 
-	var nosmurfs bool = 0
+	var nosmurfs bool = false
 	this.Nosmurfs = &nosmurfs
 
-	var protectionSynflood bool = 0
+	var protectionSynflood bool = false
 	this.ProtectionSynflood = &protectionSynflood
 
 	var protectionSynfloodBurst int64 = 1000
@@ -185,7 +185,7 @@ func NewPveRemotesGetPveRemotesByRemoteNodesByNodeFirewallOptionsResponseDataWit
 	var tcpFlagsLogLevel PdmLogLevelInEnum = PDMLOGLEVELINENUM_NOLOG
 	this.TcpFlagsLogLevel = &tcpFlagsLogLevel
 
-	var tcpflags bool = 0
+	var tcpflags bool = false
 	this.Tcpflags = &tcpflags
 
 	return &this

@@ -775,7 +775,7 @@ func (a *ResourcesAPIService) ResourcesGetSubscriptionExecute(r ApiResourcesGetS
 	if r.verbose != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "verbose", r.verbose, "form", "")
 	} else {
-		var defaultValue bool = 0
+		var defaultValue bool = false
 		parameterAddToHeaderOrQuery(localVarQueryParams, "verbose", defaultValue, "form", "")
 		r.verbose = &defaultValue
 	}

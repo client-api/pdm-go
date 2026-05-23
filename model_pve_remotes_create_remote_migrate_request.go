@@ -65,9 +65,9 @@ type _PveRemotesCreateRemoteMigrateRequest PveRemotesCreateRemoteMigrateRequest
 // will change when the set of required properties is changed
 func NewPveRemotesCreateRemoteMigrateRequest(target string, targetBridge []string, targetStorage []string) *PveRemotesCreateRemoteMigrateRequest {
 	this := PveRemotesCreateRemoteMigrateRequest{}
-	var delete bool = 0
+	var delete bool = false
 	this.Delete = &delete
-	var online bool = 0
+	var online bool = false
 	this.Online = &online
 	this.Target = target
 	this.TargetBridge = targetBridge
@@ -82,11 +82,11 @@ func NewPveRemotesCreateRemoteMigrateRequestWithDefaults() *PveRemotesCreateRemo
 	this := PveRemotesCreateRemoteMigrateRequest{}
 
 
-	var delete bool = 0
+	var delete bool = false
 	this.Delete = &delete
 
 
-	var online bool = 0
+	var online bool = false
 	this.Online = &online
 
 

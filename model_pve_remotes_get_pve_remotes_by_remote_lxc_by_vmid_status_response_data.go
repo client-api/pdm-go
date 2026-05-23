@@ -106,7 +106,7 @@ func NewPveRemotesGetPveRemotesByRemoteLxcByVmidStatusResponseData(ha map[string
 	this := PveRemotesGetPveRemotesByRemoteLxcByVmidStatusResponseData{}
 	this.Ha = ha
 	this.Status = status
-	var template bool = 0
+	var template bool = false
 	this.Template = &template
 	this.Vmid = vmid
 	return &this
@@ -139,7 +139,7 @@ func NewPveRemotesGetPveRemotesByRemoteLxcByVmidStatusResponseDataWithDefaults()
 
 
 
-	var template bool = 0
+	var template bool = false
 	this.Template = &template
 
 

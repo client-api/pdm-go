@@ -46,9 +46,9 @@ type _SdnVnetsGetVnetsResponseDataInnerPending SdnVnetsGetVnetsResponseDataInner
 // will change when the set of required properties is changed
 func NewSdnVnetsGetVnetsResponseDataInnerPending() *SdnVnetsGetVnetsResponseDataInnerPending {
 	this := SdnVnetsGetVnetsResponseDataInnerPending{}
-	var isolatePorts bool = 0
+	var isolatePorts bool = false
 	this.IsolatePorts = &isolatePorts
-	var vlanaware bool = 0
+	var vlanaware bool = false
 	this.Vlanaware = &vlanaware
 	return &this
 }
@@ -60,11 +60,11 @@ func NewSdnVnetsGetVnetsResponseDataInnerPendingWithDefaults() *SdnVnetsGetVnets
 	this := SdnVnetsGetVnetsResponseDataInnerPending{}
 
 
-	var isolatePorts bool = 0
+	var isolatePorts bool = false
 	this.IsolatePorts = &isolatePorts
 
 
-	var vlanaware bool = 0
+	var vlanaware bool = false
 	this.Vlanaware = &vlanaware
 
 

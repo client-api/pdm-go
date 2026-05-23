@@ -116,10 +116,10 @@ type _PveRemotesGetQemuResponseDataInner PveRemotesGetQemuResponseDataInner
 // will change when the set of required properties is changed
 func NewPveRemotesGetQemuResponseDataInner(status PdmPbsRemotesStatusEnum, vmid int32) *PveRemotesGetQemuResponseDataInner {
 	this := PveRemotesGetQemuResponseDataInner{}
-	var serial bool = 0
+	var serial bool = false
 	this.Serial = &serial
 	this.Status = status
-	var template bool = 0
+	var template bool = false
 	this.Template = &template
 	this.Vmid = vmid
 	return &this
@@ -153,12 +153,12 @@ func NewPveRemotesGetQemuResponseDataInnerWithDefaults() *PveRemotesGetQemuRespo
 
 
 
-	var serial bool = 0
+	var serial bool = false
 	this.Serial = &serial
 
 
 
-	var template bool = 0
+	var template bool = false
 	this.Template = &template
 
 

@@ -59,9 +59,9 @@ type _PveRemotesCreatePveRemotesByRemoteQemuByVmidRemoteMigrateRequest PveRemote
 // will change when the set of required properties is changed
 func NewPveRemotesCreatePveRemotesByRemoteQemuByVmidRemoteMigrateRequest(target string, targetBridge []string, targetStorage []string) *PveRemotesCreatePveRemotesByRemoteQemuByVmidRemoteMigrateRequest {
 	this := PveRemotesCreatePveRemotesByRemoteQemuByVmidRemoteMigrateRequest{}
-	var delete bool = 0
+	var delete bool = false
 	this.Delete = &delete
-	var online bool = 0
+	var online bool = false
 	this.Online = &online
 	this.Target = target
 	this.TargetBridge = targetBridge
@@ -76,11 +76,11 @@ func NewPveRemotesCreatePveRemotesByRemoteQemuByVmidRemoteMigrateRequestWithDefa
 	this := PveRemotesCreatePveRemotesByRemoteQemuByVmidRemoteMigrateRequest{}
 
 
-	var delete bool = 0
+	var delete bool = false
 	this.Delete = &delete
 
 
-	var online bool = 0
+	var online bool = false
 	this.Online = &online
 
 

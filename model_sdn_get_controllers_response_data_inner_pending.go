@@ -61,9 +61,9 @@ type _SdnGetControllersResponseDataInnerPending SdnGetControllersResponseDataInn
 // will change when the set of required properties is changed
 func NewSdnGetControllersResponseDataInnerPending() *SdnGetControllersResponseDataInnerPending {
 	this := SdnGetControllersResponseDataInnerPending{}
-	var bgpMultipathAsRelax bool = 0
+	var bgpMultipathAsRelax bool = false
 	this.BgpMultipathAsRelax = &bgpMultipathAsRelax
-	var ebgp bool = 0
+	var ebgp bool = false
 	this.Ebgp = &ebgp
 	return &this
 }
@@ -75,10 +75,10 @@ func NewSdnGetControllersResponseDataInnerPendingWithDefaults() *SdnGetControlle
 	this := SdnGetControllersResponseDataInnerPending{}
 
 
-	var bgpMultipathAsRelax bool = 0
+	var bgpMultipathAsRelax bool = false
 	this.BgpMultipathAsRelax = &bgpMultipathAsRelax
 
-	var ebgp bool = 0
+	var ebgp bool = false
 	this.Ebgp = &ebgp
 
 

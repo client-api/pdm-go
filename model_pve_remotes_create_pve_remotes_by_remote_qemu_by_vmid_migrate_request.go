@@ -59,7 +59,7 @@ type _PveRemotesCreatePveRemotesByRemoteQemuByVmidMigrateRequest PveRemotesCreat
 // will change when the set of required properties is changed
 func NewPveRemotesCreatePveRemotesByRemoteQemuByVmidMigrateRequest(target string) *PveRemotesCreatePveRemotesByRemoteQemuByVmidMigrateRequest {
 	this := PveRemotesCreatePveRemotesByRemoteQemuByVmidMigrateRequest{}
-	var force bool = 0
+	var force bool = false
 	this.Force = &force
 	this.Target = target
 	return &this
@@ -72,7 +72,7 @@ func NewPveRemotesCreatePveRemotesByRemoteQemuByVmidMigrateRequestWithDefaults()
 	this := PveRemotesCreatePveRemotesByRemoteQemuByVmidMigrateRequest{}
 
 
-	var force bool = 0
+	var force bool = false
 	this.Force = &force
 
 

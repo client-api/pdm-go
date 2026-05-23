@@ -115,13 +115,13 @@ type _SdnZonesGetZonesResponseDataInner SdnZonesGetZonesResponseDataInner
 // will change when the set of required properties is changed
 func NewSdnZonesGetZonesResponseDataInner(remote string, type_ PdmSdnZonesTyEnum, zone string) *SdnZonesGetZonesResponseDataInner {
 	this := SdnZonesGetZonesResponseDataInner{}
-	var advertiseSubnets bool = 0
+	var advertiseSubnets bool = false
 	this.AdvertiseSubnets = &advertiseSubnets
-	var bridgeDisableMacLearning bool = 0
+	var bridgeDisableMacLearning bool = false
 	this.BridgeDisableMacLearning = &bridgeDisableMacLearning
-	var disableArpNdSuppression bool = 0
+	var disableArpNdSuppression bool = false
 	this.DisableArpNdSuppression = &disableArpNdSuppression
-	var exitnodesLocalRouting bool = 0
+	var exitnodesLocalRouting bool = false
 	this.ExitnodesLocalRouting = &exitnodesLocalRouting
 	this.Remote = remote
 	this.Type = type_
@@ -137,23 +137,23 @@ func NewSdnZonesGetZonesResponseDataInner(remote string, type_ PdmSdnZonesTyEnum
 func NewSdnZonesGetZonesResponseDataInnerWithDefaults() *SdnZonesGetZonesResponseDataInner {
 	this := SdnZonesGetZonesResponseDataInner{}
 
-	var advertiseSubnets bool = 0
+	var advertiseSubnets bool = false
 	this.AdvertiseSubnets = &advertiseSubnets
 
 
-	var bridgeDisableMacLearning bool = 0
+	var bridgeDisableMacLearning bool = false
 	this.BridgeDisableMacLearning = &bridgeDisableMacLearning
 
 
 
 
-	var disableArpNdSuppression bool = 0
+	var disableArpNdSuppression bool = false
 	this.DisableArpNdSuppression = &disableArpNdSuppression
 
 
 
 
-	var exitnodesLocalRouting bool = 0
+	var exitnodesLocalRouting bool = false
 	this.ExitnodesLocalRouting = &exitnodesLocalRouting
 
 

@@ -2526,13 +2526,13 @@ func NewPveRemotesGetConfigResponseData(dev0 PdmDevField, dev1 PdmDevField, dev1
 	this.Arch = &arch
 	var cmode PdmPveRemotesCmodeEnum = PDMPVEREMOTESCMODEENUM_TTY
 	this.Cmode = &cmode
-	var console bool = 1
+	var console bool = true
 	this.Console = &console
 	var cpulimit float32 = 0
 	this.Cpulimit = &cpulimit
 	var cpuunits int32 = 1024
 	this.Cpuunits = &cpuunits
-	var debug bool = 0
+	var debug bool = false
 	this.Debug = &debug
 	this.Dev0 = dev0
 	this.Dev1 = dev1
@@ -3083,17 +3083,17 @@ func NewPveRemotesGetConfigResponseData(dev0 PdmDevField, dev1 PdmDevField, dev1
 	this.Net7 = net7
 	this.Net8 = net8
 	this.Net9 = net9
-	var onboot bool = 0
+	var onboot bool = false
 	this.Onboot = &onboot
-	var protection bool = 0
+	var protection bool = false
 	this.Protection = &protection
 	var swap int64 = 512
 	this.Swap = &swap
-	var template bool = 0
+	var template bool = false
 	this.Template = &template
 	var tty int32 = 2
 	this.Tty = &tty
-	var unprivileged bool = 0
+	var unprivileged bool = false
 	this.Unprivileged = &unprivileged
 	this.Unused0 = unused0
 	this.Unused1 = unused1
@@ -3366,7 +3366,7 @@ func NewPveRemotesGetConfigResponseDataWithDefaults() *PveRemotesGetConfigRespon
 	var cmode PdmPveRemotesCmodeEnum = PDMPVEREMOTESCMODEENUM_TTY
 	this.Cmode = &cmode
 
-	var console bool = 1
+	var console bool = true
 	this.Console = &console
 
 
@@ -3376,7 +3376,7 @@ func NewPveRemotesGetConfigResponseDataWithDefaults() *PveRemotesGetConfigRespon
 	var cpuunits int32 = 1024
 	this.Cpuunits = &cpuunits
 
-	var debug bool = 0
+	var debug bool = false
 	this.Debug = &debug
 
 
@@ -3938,11 +3938,11 @@ func NewPveRemotesGetConfigResponseDataWithDefaults() *PveRemotesGetConfigRespon
 
 
 
-	var onboot bool = 0
+	var onboot bool = false
 	this.Onboot = &onboot
 
 
-	var protection bool = 0
+	var protection bool = false
 	this.Protection = &protection
 
 
@@ -3952,14 +3952,14 @@ func NewPveRemotesGetConfigResponseDataWithDefaults() *PveRemotesGetConfigRespon
 	this.Swap = &swap
 
 
-	var template bool = 0
+	var template bool = false
 	this.Template = &template
 
 
 	var tty int32 = 2
 	this.Tty = &tty
 
-	var unprivileged bool = 0
+	var unprivileged bool = false
 	this.Unprivileged = &unprivileged
 
 

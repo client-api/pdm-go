@@ -58,7 +58,7 @@ type _PveRemotesGetMigrateResponseData PveRemotesGetMigrateResponseData
 // will change when the set of required properties is changed
 func NewPveRemotesGetMigrateResponseData(localDisks []PveRemotesGetMigrateResponseDataLocalDisksInner, localResources []string, mappedResourceInfo map[string]interface{}, mappedResources []string, running bool) *PveRemotesGetMigrateResponseData {
 	this := PveRemotesGetMigrateResponseData{}
-	var hasDbusVmstate bool = 0
+	var hasDbusVmstate bool = false
 	this.HasDbusVmstate = &hasDbusVmstate
 	this.LocalDisks = localDisks
 	this.LocalResources = localResources
@@ -76,7 +76,7 @@ func NewPveRemotesGetMigrateResponseDataWithDefaults() *PveRemotesGetMigrateResp
 
 
 
-	var hasDbusVmstate bool = 0
+	var hasDbusVmstate bool = false
 	this.HasDbusVmstate = &hasDbusVmstate
 
 
@@ -84,7 +84,7 @@ func NewPveRemotesGetMigrateResponseDataWithDefaults() *PveRemotesGetMigrateResp
 
 
 
-	var running bool = 0
+	var running bool = false
 	this.Running = running
 
 	return &this

@@ -52,7 +52,7 @@ type PveRemotesUpdateOptionsRequest struct {
 // will change when the set of required properties is changed
 func NewPveRemotesUpdateOptionsRequest() *PveRemotesUpdateOptionsRequest {
 	this := PveRemotesUpdateOptionsRequest{}
-	var ebtables bool = 1
+	var ebtables bool = true
 	this.Ebtables = &ebtables
 	var enable int64 = 0
 	this.Enable = &enable
@@ -69,7 +69,7 @@ func NewPveRemotesUpdateOptionsRequestWithDefaults() *PveRemotesUpdateOptionsReq
 
 
 
-	var ebtables bool = 1
+	var ebtables bool = true
 	this.Ebtables = &ebtables
 
 	var enable int64 = 0

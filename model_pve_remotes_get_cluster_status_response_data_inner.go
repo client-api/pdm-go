@@ -66,12 +66,12 @@ type _PveRemotesGetClusterStatusResponseDataInner PveRemotesGetClusterStatusResp
 func NewPveRemotesGetClusterStatusResponseDataInner(id string, name string, type_ PdmPveRemotesTypeEnum) *PveRemotesGetClusterStatusResponseDataInner {
 	this := PveRemotesGetClusterStatusResponseDataInner{}
 	this.Id = id
-	var local bool = 0
+	var local bool = false
 	this.Local = &local
 	this.Name = name
-	var online bool = 0
+	var online bool = false
 	this.Online = &online
-	var quorate bool = 0
+	var quorate bool = false
 	this.Quorate = &quorate
 	this.Type = type_
 	return &this
@@ -86,16 +86,16 @@ func NewPveRemotesGetClusterStatusResponseDataInnerWithDefaults() *PveRemotesGet
 
 
 
-	var local bool = 0
+	var local bool = false
 	this.Local = &local
 
 
 
 
-	var online bool = 0
+	var online bool = false
 	this.Online = &online
 
-	var quorate bool = 0
+	var quorate bool = false
 	this.Quorate = &quorate
 
 
