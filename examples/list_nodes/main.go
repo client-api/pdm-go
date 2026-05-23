@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"os"
 
-	pdm "github.com//"
+	pdm "github.com/client-api/pdm-go"
 )
 
 func main() {
