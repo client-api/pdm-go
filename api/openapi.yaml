@@ -39278,7 +39278,7 @@ components:
       name: CSRFPreventionToken
       type: apiKey
     PDMApiToken:
-      description: "Format: PDMAPIToken=USER@REALM!TOKENID=UUID"
+      description: "Format: PDMAPIToken=USER@REALM!TOKENID:UUID"
       in: header
       name: Authorization
       type: apiKey

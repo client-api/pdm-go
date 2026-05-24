@@ -31,7 +31,7 @@ import (
 func main() {
     cfg := openapi.NewConfiguration()
     cfg.Servers[0].URL = "https://pdm1.example.com:8443/api2/json"
-    cfg.AddDefaultHeader("Authorization", "PDMAPIToken=user@realm!tokenid=uuid-secret")
+    cfg.AddDefaultHeader("Authorization", "PDMAPIToken=user@realm!tokenid:uuid-secret")
 
     pve := openapi.NewPdm(cfg)
 
