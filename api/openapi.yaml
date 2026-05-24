@@ -3965,6 +3965,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PdmNodesAptNode"
       - description: Display all log since this UNIX epoch. Conflicts with 'startcursor'.
@@ -3976,6 +3977,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - description: Start after the given Cursor. Conflicts with 'since'.
         explode: true
@@ -3994,6 +3996,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       responses:
         "200":
@@ -4762,6 +4765,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PdmNodesAptNode"
       - description: Service ID.
@@ -4791,6 +4795,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - description: Display all log until this date-time string.
         explode: true
@@ -4859,6 +4864,7 @@ paths:
           default: 50
           format: int64
           type: integer
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PdmNodesAptNode"
       - description: Only list running tasks.
@@ -4878,6 +4884,7 @@ paths:
         schema:
           format: int64
           type: integer
+          x-int64: true
         style: form
       - description: List tasks beginning from this offset.
         explode: true
@@ -4888,6 +4895,7 @@ paths:
           default: 0
           format: int64
           type: integer
+          x-int64: true
         style: form
       - description: Only list tasks which have any one of the listed status.
         explode: true
@@ -4915,6 +4923,7 @@ paths:
         schema:
           format: int64
           type: integer
+          x-int64: true
         style: form
       - description: Only list tasks from this user.
         explode: true
@@ -5050,6 +5059,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PdmNodesAptNode"
       - description: Start at this line when reading the tasklog
@@ -5062,6 +5072,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - description: "Test task status, and set result attribute \"active\" accordingly."
         explode: true
@@ -5292,6 +5303,7 @@ paths:
         schema:
           format: int64
           type: integer
+          x-int64: true
         style: form
       - description: Terminal ticket
         explode: true
@@ -5581,6 +5593,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - description: Namespace.
         explode: true
@@ -6109,6 +6122,7 @@ paths:
         schema:
           format: int64
           type: integer
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PdmPbsRemotesRemote"
       - description: Terminal ticket
@@ -6414,6 +6428,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PdmPbsRemotesRemote"
       - description: Start at this line when reading the tasklog
@@ -6426,6 +6441,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PdmPbsRemotesUpid"
       responses:
@@ -9034,6 +9050,7 @@ paths:
         schema:
           format: int64
           type: integer
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PdmPbsRemotesRemote"
       - description: Terminal ticket
@@ -10141,6 +10158,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PdmPbsRemotesRemote"
       - description: Start at this line when reading the tasklog
@@ -10153,6 +10171,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - $ref: "#/components/parameters/PdmPbsRemotesUpid"
       responses:
@@ -10798,6 +10817,7 @@ paths:
           default: 50
           format: int64
           type: integer
+          x-int64: true
         style: form
       - description: Remote ID.
         explode: true
@@ -10827,6 +10847,7 @@ paths:
         schema:
           format: int64
           type: integer
+          x-int64: true
         style: form
       - description: List tasks beginning from this offset.
         explode: true
@@ -10837,6 +10858,7 @@ paths:
           default: 0
           format: int64
           type: integer
+          x-int64: true
         style: form
       - description: Only list tasks which have any one of the listed status.
         explode: true
@@ -10864,6 +10886,7 @@ paths:
         schema:
           format: int64
           type: integer
+          x-int64: true
         style: form
       - description: Only list tasks from this user.
         explode: true
@@ -10938,6 +10961,7 @@ paths:
           default: 50
           format: int64
           type: integer
+          x-int64: true
         style: form
       - description: Remote ID.
         explode: true
@@ -10967,6 +10991,7 @@ paths:
         schema:
           format: int64
           type: integer
+          x-int64: true
         style: form
       - description: List tasks beginning from this offset.
         explode: true
@@ -10977,6 +11002,7 @@ paths:
           default: 0
           format: int64
           type: integer
+          x-int64: true
         style: form
       - description: Only list tasks which have any one of the listed status.
         explode: true
@@ -11004,6 +11030,7 @@ paths:
         schema:
           format: int64
           type: integer
+          x-int64: true
         style: form
       - description: Only list tasks from this user.
         explode: true
@@ -11199,6 +11226,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - description: Type of a PDM resource.
         explode: true
@@ -11268,6 +11296,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - description: View name.
         explode: true
@@ -11321,6 +11350,7 @@ paths:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         style: form
       - description: "If true, includes subscription information per node (with enough\
           \ privileges)"
@@ -12046,6 +12076,7 @@ components:
         format: int64
         minimum: 1
         type: integer
+        x-int64: true
       style: simple
     PdmStorage:
       explode: false
@@ -12945,6 +12976,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         firstname:
           description: First name.
           maxLength: 64
@@ -13084,6 +13116,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         firstname:
           description: First name.
           maxLength: 64
@@ -13214,6 +13247,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
     AccessUsersCreateTokenResponse:
       example:
         total: 0
@@ -13276,6 +13310,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         regenerate:
           default: false
           description: Regenerate token secret while keeping permissions.
@@ -15550,6 +15585,7 @@ components:
           description: Index within the file (starting from 0).
           format: int64
           type: integer
+          x-int64: true
         path:
           description: Path to the containing file.
           type: string
@@ -16468,6 +16504,7 @@ components:
           description: VLAN ID.
           format: int64
           type: integer
+          x-int64: true
         vlan-raw-device:
           description: Network interface name.
           maxLength: 15
@@ -16732,6 +16769,7 @@ components:
           description: VLAN ID.
           format: int64
           type: integer
+          x-int64: true
         vlan-raw-device:
           description: Network interface name.
           maxLength: 15
@@ -18512,6 +18550,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         log_ratelimit:
           allOf:
           - $ref: "#/components/schemas/PdmLogRatelimitField"
@@ -19919,6 +19958,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         node:
           description: Node name (or 'localhost')
           pattern: "/^(?:[a-zA-Z0-9](?:[a-zA-Z0-9\\-]*[a-zA-Z0-9])?)$/"
@@ -19942,6 +19982,7 @@ components:
           description: Shutdown timeout for restart-migrations.
           format: int64
           type: integer
+          x-int64: true
       required:
       - target
     PveRemotesCreateMigrateResponse:
@@ -20002,6 +20043,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         delete:
           default: false
           description: Delete the original VM and related data after successful migration.
@@ -20041,10 +20083,12 @@ components:
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
         timeout:
           description: Add a shutdown timeout for the restart-migration.
           format: int64
           type: integer
+          x-int64: true
       required:
       - target
       - target-bridge
@@ -20561,12 +20605,14 @@ components:
           format: int64
           minimum: 32768
           type: integer
+          x-int64: true
         nf_conntrack_tcp_timeout_established:
           default: 432000
           description: Conntrack established timeout.
           format: int64
           minimum: 7875
           type: integer
+          x-int64: true
         nf_conntrack_tcp_timeout_syn_recv:
           default: 60
           description: Conntrack syn recv timeout.
@@ -20590,11 +20636,13 @@ components:
           description: Synflood protection rate burst by ip src.
           format: int64
           type: integer
+          x-int64: true
         protection_synflood_rate:
           default: 200
           description: Synflood protection rate syn/sec by ip src.
           format: int64
           type: integer
+          x-int64: true
         smurf_log_level:
           allOf:
           - $ref: "#/components/schemas/PdmLogLevelInEnum"
@@ -22613,6 +22661,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         force:
           default: false
           description: Allow to migrate VMs with local devices.
@@ -22699,6 +22748,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         delete:
           default: false
           description: Delete the original VM and related data after successful migration.
@@ -22735,6 +22785,7 @@ components:
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
       required:
       - target
       - target-bridge
@@ -24285,6 +24336,7 @@ components:
           description: Creation time of this entry as unix epoch.
           format: int64
           type: integer
+          x-int64: true
         description:
           description: User chosen description for this entry.
           type: string
@@ -24331,6 +24383,7 @@ components:
             \ expiration time."
           format: int64
           type: integer
+          x-int64: true
         totp-locked:
           description: The user is locked out of TOTP authentication.
           type: boolean
@@ -24362,6 +24415,7 @@ components:
           items:
             format: int64
             type: integer
+            x-int64: true
           type: array
       required:
       - recovery
@@ -24389,6 +24443,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         tokenid:
           description: API Token ID
           maxLength: 64
@@ -24442,6 +24497,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         firstname:
           description: First name.
           maxLength: 64
@@ -24459,6 +24515,7 @@ components:
             factors
           format: int64
           type: integer
+          x-int64: true
         tokens:
           description: List of user's API tokens.
           items:
@@ -24509,6 +24566,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         firstname:
           description: First name.
           maxLength: 64
@@ -24554,6 +24612,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         token-name:
           description: |-
             The token ID part of an API token authentication id.
@@ -25336,6 +25395,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         kind:
           description: Info kind (e.g. "warning")
           type: string
@@ -25625,10 +25685,12 @@ components:
           description: Certificate's notAfter timestamp (UNIX epoch).
           format: int64
           type: integer
+          x-int64: true
         notbefore:
           description: Certificate's notBefore timestamp (UNIX epoch).
           format: int64
           type: integer
+          x-int64: true
         pem:
           description: Certificate in PEM format.
           type: string
@@ -25871,6 +25933,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         name:
           description: Network interface name.
           maxLength: 15
@@ -25903,6 +25966,7 @@ components:
           description: VLAN ID.
           format: int64
           type: integer
+          x-int64: true
         vlan-raw-device:
           description: Network interface name.
           maxLength: 15
@@ -25927,6 +25991,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         total-time:
           description: Total time in milliseconds needed for full metric collection
             run.
@@ -25969,6 +26034,7 @@ components:
           description: This route's metric.
           format: int64
           type: integer
+          x-int64: true
         nexthops:
           description: A list of nexthops for the route table entry.
           items:
@@ -26010,6 +26076,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         model:
           description: The CPU model
           type: string
@@ -26018,6 +26085,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
       required:
       - cpus
       - model
@@ -26069,16 +26137,19 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         total:
           description: Total memory
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         used:
           description: Used memory
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
       required:
       - free
       - total
@@ -26095,16 +26166,19 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         total:
           description: Total space (bytes).
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         used:
           description: Used space (bytes).
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
       required:
       - avail
       - total
@@ -26121,16 +26195,19 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         total:
           description: Total swap
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         used:
           description: Used swap
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
       required:
       - free
       - total
@@ -26201,6 +26278,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         wait:
           description: Total IO wait since last query.
           type: number
@@ -26234,6 +26312,7 @@ components:
           description: timestamp of the last check done
           format: int64
           type: integer
+          x-int64: true
         key:
           description: "the subscription key, if set and permitted to access"
           type: string
@@ -26275,6 +26354,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         t:
           description: Line text.
           type: string
@@ -26298,6 +26378,7 @@ components:
           description: The task end time (Epoch)
           format: int64
           type: integer
+          x-int64: true
         node:
           description: The node name where the task is running on.
           type: string
@@ -26305,15 +26386,18 @@ components:
           description: The Unix PID
           format: int64
           type: integer
+          x-int64: true
         pstart:
           description: The task start time (Epoch)
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         starttime:
           description: The task start time (Epoch)
           format: int64
           type: integer
+          x-int64: true
         status:
           description: Task end status
           type: string
@@ -26351,6 +26435,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         t:
           description: The line of the log.
           type: string
@@ -26381,6 +26466,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
       required:
       - active
       - data
@@ -26414,14 +26500,17 @@ components:
           description: The Unix PID.
           format: int64
           type: integer
+          x-int64: true
         pstart:
           description: The Unix process start time from `/proc/pid/stat`
           format: int64
           type: integer
+          x-int64: true
         starttime:
           description: The task start time (Epoch)
           format: int64
           type: integer
+          x-int64: true
         status:
           description: '''running'' or ''stopped'''
           type: string
@@ -26487,11 +26576,13 @@ components:
           format: int64
           minimum: 1297163644
           type: integer
+          x-int64: true
         time:
           description: Seconds since 1970-01-01 00:00:00 UTC.
           format: int64
           minimum: 1297163644
           type: integer
+          x-int64: true
         timezone:
           description: Time zone. The file '/usr/share/zoneinfo/zone.tab' contains
             the list of valid names.
@@ -26559,31 +26650,37 @@ components:
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
         keep-hourly:
           description: Number of hourly backups to keep.
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
         keep-last:
           description: Number of backups to keep.
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
         keep-monthly:
           description: Number of monthly backups to keep.
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
         keep-weekly:
           description: Number of weekly backups to keep.
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
         keep-yearly:
           description: Number of yearly backups to keep.
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
         maintenance-mode:
           allOf:
           - $ref: "#/components/schemas/PdmMaintenanceModeField"
@@ -26681,6 +26778,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
       required:
       - time
     PbsRemotesGetSnapshotsResponse_data_inner_verification:
@@ -26728,6 +26826,7 @@ components:
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
         backup-type:
           allOf:
           - $ref: "#/components/schemas/PdmPbsRemotesBackupTypeEnum"
@@ -26762,6 +26861,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         verification:
           $ref: "#/components/schemas/PbsRemotesGetSnapshotsResponse_data_inner_verification"
       required:
@@ -26780,6 +26880,7 @@ components:
           description: Always '0'.
           format: int64
           type: integer
+          x-int64: true
         ticket:
           description: VNC ticket used to authenticate websocket upgrade.
           type: string
@@ -26863,6 +26964,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
       required:
       - time
     PbsRemotesGetLogResponse_data_inner:
@@ -26874,6 +26976,7 @@ components:
           description: Line number
           format: int64
           type: integer
+          x-int64: true
         t:
           description: Line text
           type: string
@@ -26906,14 +27009,17 @@ components:
           description: The Unix PID
           format: int64
           type: integer
+          x-int64: true
         pstart:
           description: The task start time (Epoch)
           format: int64
           type: integer
+          x-int64: true
         starttime:
           description: The task's start time.
           format: int64
           type: integer
+          x-int64: true
         status:
           allOf:
           - $ref: "#/components/schemas/PdmPbsRemotesStatusEnum"
@@ -26995,11 +27101,13 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         all:
           description: The total amount of rules present
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         enabled:
           description: True if the firewall is enabled
           type: boolean
@@ -27031,6 +27139,7 @@ components:
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
       required:
       - kind
       - name
@@ -27199,10 +27308,12 @@ components:
           description: "[node] ID of the node from the corosync configuration."
           format: int64
           type: integer
+          x-int64: true
         nodes:
           description: "[cluster] Nodes count, including offline nodes."
           format: int64
           type: integer
+          x-int64: true
         online:
           default: false
           description: "[node] Indicates if the node is online or offline."
@@ -27223,6 +27334,7 @@ components:
           description: "[cluster] Current version of the corosync configuration file."
           format: int64
           type: integer
+          x-int64: true
       required:
       - id
       - name
@@ -27246,6 +27358,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         log_ratelimit:
           allOf:
           - $ref: "#/components/schemas/PdmLogRatelimitField"
@@ -27298,6 +27411,7 @@ components:
           description: Flag to enable/disable a rule
           format: int64
           type: integer
+          x-int64: true
         icmp-type:
           description: |-
             Specify icmp-type. Only valid if proto equals 'icmp' or
@@ -27314,6 +27428,7 @@ components:
             addresses
           format: int64
           type: integer
+          x-int64: true
         log:
           allOf:
           - $ref: "#/components/schemas/PdmLogLevelInEnum"
@@ -27326,6 +27441,7 @@ components:
           description: Rule position in the ruleset
           format: int64
           type: integer
+          x-int64: true
         proto:
           description: |-
             IP protocol. You can use protocol names ('tcp'/'udp') or simple numbers,
@@ -27381,6 +27497,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         diskread:
           description: |-
             The amount of bytes the guest read from it's block devices since the
@@ -27388,6 +27505,7 @@ components:
             types.)
           format: int64
           type: integer
+          x-int64: true
         diskwrite:
           description: |-
             The amount of bytes the guest wrote from it's block devices since the
@@ -27395,6 +27513,7 @@ components:
             types.)
           format: int64
           type: integer
+          x-int64: true
         lock:
           description: "The current config lock, if any."
           type: string
@@ -27402,18 +27521,22 @@ components:
           description: Root disk image size in bytes.
           format: int64
           type: integer
+          x-int64: true
         maxmem:
           description: Maximum memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         maxswap:
           description: Maximum SWAP memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         mem:
           description: Currently used memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         name:
           description: Container name.
           type: string
@@ -27423,12 +27546,14 @@ components:
             network since it was started.
           format: int64
           type: integer
+          x-int64: true
         netout:
           description: |-
             The amount of traffic in bytes that was sent from the guest over the
             network since it was started.
           format: int64
           type: integer
+          x-int64: true
         pressurecpusome:
           description: CPU Some pressure stall average over the last 10 seconds.
           type: number
@@ -27459,6 +27584,7 @@ components:
           description: Uptime in seconds.
           format: int64
           type: integer
+          x-int64: true
         vmid:
           description: The (unique) ID of the VM.
           maximum: 999999999
@@ -29430,6 +29556,7 @@ components:
           format: int64
           minimum: 16
           type: integer
+          x-int64: true
         mp0:
           allOf:
           - $ref: "#/components/schemas/PdmMpField"
@@ -30887,6 +31014,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         tags:
           description: Tags of the Container. This is only meta information.
           type: string
@@ -33107,6 +33235,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         uptime:
           description: Container uptime
           type: number
@@ -33150,6 +33279,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         diskread:
           description: |-
             The amount of bytes the guest read from it's block devices since the
@@ -33157,6 +33287,7 @@ components:
             types.)
           format: int64
           type: integer
+          x-int64: true
         diskwrite:
           description: |-
             The amount of bytes the guest wrote from it's block devices since the
@@ -33164,6 +33295,7 @@ components:
             types.)
           format: int64
           type: integer
+          x-int64: true
         ha:
           description: HA manager service status.
           properties: {}
@@ -33175,18 +33307,22 @@ components:
           description: Root disk image size in bytes.
           format: int64
           type: integer
+          x-int64: true
         maxmem:
           description: Maximum memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         maxswap:
           description: Maximum SWAP memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         mem:
           description: Currently used memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         name:
           description: Container name.
           type: string
@@ -33196,12 +33332,14 @@ components:
             network since it was started.
           format: int64
           type: integer
+          x-int64: true
         netout:
           description: |-
             The amount of traffic in bytes that was sent from the guest over the
             network since it was started.
           format: int64
           type: integer
+          x-int64: true
         pressurecpusome:
           description: CPU Some pressure stall average over the last 10 seconds.
           type: number
@@ -33232,6 +33370,7 @@ components:
           description: Uptime in seconds.
           format: int64
           type: integer
+          x-int64: true
         vmid:
           description: The (unique) ID of the VM.
           maximum: 999999999
@@ -33263,14 +33402,17 @@ components:
           description: Number of available CPUs.
           format: int64
           type: integer
+          x-int64: true
         maxmem:
           description: Number of available memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         mem:
           description: Used memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         node:
           description: The cluster node name.
           type: string
@@ -33286,6 +33428,7 @@ components:
           description: Node uptime in seconds.
           format: int64
           type: integer
+          x-int64: true
       required:
       - node
       - status
@@ -33354,12 +33497,14 @@ components:
           format: int64
           minimum: 32768
           type: integer
+          x-int64: true
         nf_conntrack_tcp_timeout_established:
           default: 432000
           description: Conntrack established timeout.
           format: int64
           minimum: 7875
           type: integer
+          x-int64: true
         nf_conntrack_tcp_timeout_syn_recv:
           default: 60
           description: Conntrack syn recv timeout.
@@ -33383,11 +33528,13 @@ components:
           description: Synflood protection rate burst by ip src.
           format: int64
           type: integer
+          x-int64: true
         protection_synflood_rate:
           default: 200
           description: Synflood protection rate syn/sec by ip src.
           format: int64
           type: integer
+          x-int64: true
         smurf_log_level:
           allOf:
           - $ref: "#/components/schemas/PdmLogLevelInEnum"
@@ -33491,6 +33638,7 @@ components:
           description: The bridge port access VLAN.
           format: int64
           type: integer
+          x-int64: true
         bridge-arp-nd-suppress:
           default: false
           description: Bridge port ARP/ND suppress flag.
@@ -33614,6 +33762,7 @@ components:
           description: The order of the interface.
           format: int64
           type: integer
+          x-int64: true
         slaves:
           description: Specify the interfaces used by the bonding device.
           pattern: "/^[a-zA-Z][a-zA-Z0-9_]{1,20}([:\\.]\\d+)?$/"
@@ -33642,6 +33791,7 @@ components:
           description: The VXLAN ID.
           format: int64
           type: integer
+          x-int64: true
         vxlan-local-tunnelip:
           description: The VXLAN local tunnel IP.
           type: string
@@ -33720,6 +33870,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         uptime:
           description: Container uptime
           type: number
@@ -33754,10 +33905,12 @@ components:
           description: The number of physical cores of the CPU.
           format: int64
           type: integer
+          x-int64: true
         cpus:
           description: The number of logical threads of the CPU.
           format: int64
           type: integer
+          x-int64: true
         model:
           description: The CPU model
           type: string
@@ -33765,6 +33918,7 @@ components:
           description: The number of logical threads of the CPU.
           format: int64
           type: integer
+          x-int64: true
       required:
       - cores
       - cpus
@@ -33807,18 +33961,22 @@ components:
           description: The available memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         free:
           description: The free memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         total:
           description: The total memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         used:
           description: The used memory in bytes.
           format: int64
           type: integer
+          x-int64: true
       required:
       - free
       - total
@@ -33835,18 +33993,22 @@ components:
           description: The available bytes in the root filesystem.
           format: int64
           type: integer
+          x-int64: true
         free:
           description: The free bytes on the root filesystem.
           format: int64
           type: integer
+          x-int64: true
         total:
           description: The total size of the root filesystem in bytes.
           format: int64
           type: integer
+          x-int64: true
         used:
           description: The used bytes in the root filesystem.
           format: int64
           type: integer
+          x-int64: true
       required:
       - avail
       - free
@@ -33962,6 +34124,7 @@ components:
           description: Available storage space in bytes.
           format: int64
           type: integer
+          x-int64: true
         content:
           allOf:
           - $ref: "#/components/schemas/PdmContentField"
@@ -33990,6 +34153,7 @@ components:
           description: Total storage space in bytes.
           format: int64
           type: integer
+          x-int64: true
         type:
           description: Storage type.
           type: string
@@ -33997,6 +34161,7 @@ components:
           description: Used storage space in bytes.
           format: int64
           type: integer
+          x-int64: true
         used_fraction:
           description: Used fraction (used/total).
           type: number
@@ -34021,6 +34186,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
       required:
       - time
     PveRemotesGetPveRemotesByRemoteNodesByNodeStorageByStorageStatusResponse_data:
@@ -34042,6 +34208,7 @@ components:
           description: Available storage space in bytes.
           format: int64
           type: integer
+          x-int64: true
         content:
           allOf:
           - $ref: "#/components/schemas/PdmContentField"
@@ -34058,6 +34225,7 @@ components:
           description: Total storage space in bytes.
           format: int64
           type: integer
+          x-int64: true
         type:
           description: Storage type.
           type: string
@@ -34065,6 +34233,7 @@ components:
           description: Used storage space in bytes.
           format: int64
           type: integer
+          x-int64: true
       required:
       - content
       - type
@@ -34112,6 +34281,7 @@ components:
             types.)
           format: int64
           type: integer
+          x-int64: true
         diskwrite:
           description: |-
             The amount of bytes the guest wrote from it's block devices since the
@@ -34119,6 +34289,7 @@ components:
             types.)
           format: int64
           type: integer
+          x-int64: true
         lock:
           description: "The current config lock, if any."
           type: string
@@ -34126,18 +34297,22 @@ components:
           description: Root disk size in bytes.
           format: int64
           type: integer
+          x-int64: true
         maxmem:
           description: Maximum memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         mem:
           description: Currently used memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         memhost:
           description: Current memory usage on the host.
           format: int64
           type: integer
+          x-int64: true
         name:
           description: VM (host)name.
           type: string
@@ -34147,16 +34322,19 @@ components:
             network since it was started.
           format: int64
           type: integer
+          x-int64: true
         netout:
           description: |-
             The amount of traffic in bytes that was sent from the guest over the
             network since it was started.
           format: int64
           type: integer
+          x-int64: true
         pid:
           description: "PID of the QEMU process, if the VM is running."
           format: int64
           type: integer
+          x-int64: true
         pressurecpufull:
           description: CPU Full pressure stall average over the last 10 seconds.
           type: number
@@ -34203,6 +34381,7 @@ components:
           description: Uptime in seconds.
           format: int64
           type: integer
+          x-int64: true
         vmid:
           description: The (unique) ID of the VM.
           maximum: 999999999
@@ -34770,6 +34949,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         bios:
           allOf:
           - $ref: "#/components/schemas/PdmPveRemotesBiosEnum"
@@ -34826,6 +35006,7 @@ components:
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
         cpu:
           allOf:
           - $ref: "#/components/schemas/PdmCpuField"
@@ -35509,6 +35690,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         name:
           description: Set a name for the VM. Only used on the configuration web interface.
           type: string
@@ -35929,17 +36111,20 @@ components:
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
         snaptime:
           description: Timestamp for snapshots.
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         sockets:
           default: 1
           description: The number of CPU sockets.
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
         spice_enhancements:
           allOf:
           - $ref: "#/components/schemas/PdmSpiceEnhancementsField"
@@ -37341,6 +37526,7 @@ components:
           format: int64
           minimum: 1
           type: integer
+          x-int64: true
         vga:
           allOf:
           - $ref: "#/components/schemas/PdmVgaField"
@@ -37931,6 +38117,7 @@ components:
           description: The size of the disk in bytes.
           format: int64
           type: integer
+          x-int64: true
         volid:
           description: The volid of the disk.
           type: string
@@ -38112,6 +38299,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         uptime:
           description: Guest uptime
           type: number
@@ -38175,6 +38363,7 @@ components:
             types.)
           format: int64
           type: integer
+          x-int64: true
         diskwrite:
           description: |-
             The amount of bytes the guest wrote from it's block devices since the
@@ -38182,6 +38371,7 @@ components:
             types.)
           format: int64
           type: integer
+          x-int64: true
         ha:
           description: HA manager service status.
           properties: {}
@@ -38193,18 +38383,22 @@ components:
           description: Root disk size in bytes.
           format: int64
           type: integer
+          x-int64: true
         maxmem:
           description: Maximum memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         mem:
           description: Currently used memory in bytes.
           format: int64
           type: integer
+          x-int64: true
         memhost:
           description: Current memory usage on the host.
           format: int64
           type: integer
+          x-int64: true
         name:
           description: VM (host)name.
           type: string
@@ -38214,16 +38408,19 @@ components:
             network since it was started.
           format: int64
           type: integer
+          x-int64: true
         netout:
           description: |-
             The amount of traffic in bytes that was sent from the guest over the
             network since it was started.
           format: int64
           type: integer
+          x-int64: true
         pid:
           description: "PID of the QEMU process, if the VM is running."
           format: int64
           type: integer
+          x-int64: true
         pressurecpufull:
           description: CPU Full pressure stall average over the last 10 seconds.
           type: number
@@ -38274,6 +38471,7 @@ components:
           description: Uptime in seconds.
           format: int64
           type: integer
+          x-int64: true
         vmid:
           description: The (unique) ID of the VM.
           maximum: 999999999
@@ -38300,6 +38498,7 @@ components:
           description: The task's end time.
           format: int64
           type: integer
+          x-int64: true
         id:
           description: The task id.
           type: string
@@ -38310,14 +38509,17 @@ components:
           description: The task process id.
           format: int64
           type: integer
+          x-int64: true
         pstart:
           description: The task's proc start time.
           format: int64
           type: integer
+          x-int64: true
         starttime:
           description: The task's start time.
           format: int64
           type: integer
+          x-int64: true
         status:
           description: The task's status.
           type: string
@@ -38365,14 +38567,17 @@ components:
           description: The task process id.
           format: int64
           type: integer
+          x-int64: true
         pstart:
           description: The task's proc start time.
           format: int64
           type: integer
+          x-int64: true
         starttime:
           description: The task's start time.
           format: int64
           type: integer
+          x-int64: true
         status:
           allOf:
           - $ref: "#/components/schemas/PdmPbsRemotesStatusEnum"
@@ -38409,6 +38614,7 @@ components:
           description: Timestamp of last successful collection.
           format: int64
           type: integer
+          x-int64: true
         remote:
           description: The remote's name.
           type: string
@@ -38428,6 +38634,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
       required:
       - time
     RemotesRemoteGetVersionResponse_data:
@@ -38549,11 +38756,13 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         start:
           description: The UNIX epoch of the first data point.
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
       required:
       - data
       - resolution
@@ -38688,6 +38897,7 @@ components:
             only.
           format: int64
           type: integer
+          x-int64: true
         isis-domain:
           description: Name of the IS-IS domain. IS-IS only.
           type: string
@@ -38769,6 +38979,7 @@ components:
             only.
           format: int64
           type: integer
+          x-int64: true
         isis-domain:
           description: Name of the IS-IS domain. IS-IS only.
           type: string
@@ -39017,6 +39228,7 @@ components:
           description: "MTU of the zone, will be used for the created VNet bridges."
           format: int64
           type: integer
+          x-int64: true
         nodes:
           description: Nodes where this zone should be created.
           type: string
@@ -39038,6 +39250,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         vlan-protocol:
           allOf:
           - $ref: "#/components/schemas/PdmVlanProtocolEnum"
@@ -39169,6 +39382,7 @@ components:
           description: "MTU of the zone, will be used for the created VNet bridges."
           format: int64
           type: integer
+          x-int64: true
         nodes:
           description: Nodes where this zone should be created.
           type: string
@@ -39202,6 +39416,7 @@ components:
           format: int64
           minimum: 0
           type: integer
+          x-int64: true
         type:
           allOf:
           - $ref: "#/components/schemas/PdmSdnZonesTyEnum"
